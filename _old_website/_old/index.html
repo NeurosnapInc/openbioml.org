@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OpenBioML - A brand new community focused on fair and open research for artificial intelligence in biology.</title>
+  <meta name="description" content="We believe in fully open source and transparent research practices and have international collaborators with a diverse set of academic backgrounds."/>
+  <meta property="og:title" content="OpenBioML - A brand new community focused on fair and open research for artificial intelligence in biology.">
+  <meta property="og:description" content="We believe in fully open source and transparent research practices and have international collaborators with a diverse set of academic backgrounds.">
+  <meta property="og:image" content="/assets/favicon.png">
+  <!-- TODO -->
+  <meta name="theme-color" content="#2669ff">
+  <meta name="viewport" content="width=950px">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+  <link rel="stylesheet" href="/css/master.css">
+  <!-- TODO -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+</head>
+
+<body>
+  <nav>
+    <a href="/">
+      <img src="/assets/favicon.png">
+      <p>OpenBioML</p>
+    </a>
+    <div>
+      <a class="btn-icon" href="https://discord.gg/GgDBFP8ZEt">
+        <img src="/assets/discord.svg" alt="Discord invite link">
+      </a>
+      <a class="btn-icon" href="https://www.youtube.com/channel/UCJpyfeYRYvwVV4df7lqdfTQ">
+        <img src="/assets/youtube.svg" alt="YouTube channel">
+      </a>
+    </div>
+  </nav>
+  <header>
+    <h1>Welcome to OpenBioML</h1>
+    <p>Follow us as we create something unique</p>
+    <form action="">
+      <input id="email" type="email" placeholder="Email Address" required>
+      <input class="btn" type="submit" value="Notify Me">
+    </form>
+    <span>
+      <a class="btn-icon" href="https://discord.gg/GgDBFP8ZEt">
+        <img src="/assets/discord.svg" alt="Discord invite link">
+      </a>
+      <a class="btn-icon" href="https://www.youtube.com/channel/UCJpyfeYRYvwVV4df7lqdfTQ">
+        <img src="/assets/youtube.svg" alt="YouTube channel">
+      </a>
+    </span>
+
+    <div class="footer">
+      <a href="https://stability.ai/terms-of-use">Terms of Use</a>
+      <a href="https://stability.ai/privacy-policy">Privacy Policy</a>
+    </div>
+  </header>
+
+  <!-- <footer>
+    <p>&copy; 2022 All Rights Reserved.</p>
+  </footer> -->
+</body>
+</html>
+
+
+<script>
+async function submit(event) {
+  event.preventDefault();
+  let email = document.getElementById("email").value;
+  
+  let r = await fetch("https://discord.com/api/webhooks/1006294434989736046/Txftntyf7PpsIMitZ_wZJKwCRSSKJZW9fuwxm1PqOuyB2_9oVfZZMVUXbmvJ0HcCu61r", {
+    method: "POST",
+    body: JSON.stringify({"content": email}),
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  });
+
+  if (r.status == 204) {
+    alert("Your email has successfully been added.")
+  } else {
+    alert("An error occurred please try again later...")
+  }
+}
+document.querySelector("form").addEventListener("submit", submit);
+
+let min = 1;
+let max = 8;
+let choice = Math.floor(Math.random() * (max - min + 1)) + min;
+document.styleSheets[0].addRule('header::before',`background-image: url("/assets/proteins/${choice}.png") !important;`);
+</script>
