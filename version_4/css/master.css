@@ -1,0 +1,88 @@
+/* Navbar */
+.navbar {
+    position: absolute; /* Makes the navbar float over the hero */
+    top: 0; /* Positions it at the top of the page */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Ensures it stretches full width */
+    z-index: 100; /* Ensures it stays above all other elements */
+    height: 95px;
+    border: none; /* Remove border to avoid unnecessary outline */
+    padding-top: 0px; /* Reduced padding to bring it closer to the top */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a slight transparent tint */
+}
+
+.navbar .nav-text {
+    font-family: 'Lato', sans-serif; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 30px; 
+    letter-spacing: -0.02em; 
+    text-align: right; 
+    text-underline-position: from-font; 
+    text-decoration-skip-ink: none; 
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    height:100px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    background-size: contain;
+    background-position: center bottom;
+}
+.navbar .logo {
+    width: 18vw;
+    height: auto;
+}
+.navbar .main-menu {
+    flex-grow: 1;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    padding: 1vw 1vw; /* Reduced padding for closer alignment */
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+.navbar .login a:hover {
+    color: #4891ff;
+}
+
+.navbar .social-icons2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+
+.navbar .social-icons3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+}
+
+.navbar .social-icons a img {
+    width: 1.5vw; /* Adjusted size for alignment */
+    height: 1.5vw;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .social-icons a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
