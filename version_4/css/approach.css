@@ -33,37 +33,39 @@ img {
 
 /* Hero */
 .hero {
-    padding-top: 80px; /* Accounts for navbar height */
+  padding-top: 50px; /* Accounts for navbar height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  background-size: contain;
+  background-position: center bottom;
 }
 
 .hero .container {
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    background-size: contain;
-    background-position: center bottom;
-    height: 80vw; /* Ensure a fixed height for vertical centering */
-    margin-left: 5.5vw;
-    margin-right: 5.5vw;
+  width: 100%; /* Ensure the container takes full width */
+  margin-left: 7vw;
+  margin-right: 7vw;
+
 }
 
 .hero .hero-content {
-    width: 100%; /* Ensure the content takes full width */
-    text-align: center; /* Align text horizontally */
-    padding-top: 0; /* Remove the padding-top to allow proper vertical centering */
+  justify-content: center;
+  text-align: center; /* Ensure content remains centered */
+  margin: 0 auto; /* Center content horizontally */
 }
 
 .hero .hero-heading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 48px; 
-    font-weight: 600; 
-    line-height: 86.4px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-decoration-skip-ink: none; 
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 25px;
+  font-family: 'Open sans', sans-serif; 
+  text-align: center; 
+  color: #ffffff;
+  font-weight: 600; 
+  margin-bottom: 2vw;
+  font-size: 3.4vw; 
+  line-height: 5rem; 
+  letter-spacing: -0.02em; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
 }
 
 .hero .hero-buttons {
@@ -82,14 +84,43 @@ img {
 
 
 /* Research Philosophy Section */
-.research-philosophy {
-    padding: 60px 20px;
+
+
+/* Left Column */
+.left-column {
+  flex: 1; /* Take up equal space with the right column */
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 7vw;
 }
+/* Right Column */
+.right-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vw;
+}
+.research-philosophy {
+  padding: 60px 20px;
+}
+
+
+/* Flexbox Layout */
+.research-container {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .research-philosophy .research-heading2 {
     font-family: 'Open Sans', sans-serif; 
-    font-size: 34px; 
+    font-size: 2.1vw; 
     font-weight: 600; 
-    line-height: 51px; 
+    line-height: 2.2rem; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
@@ -97,28 +128,26 @@ img {
 
 }
 .research-philosophy .research-heading {
-font-family: 'Open Sans', sans-serif; 
-    font-size: 54px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 4vw; 
     font-weight: 700; 
-    line-height: 81px; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
     text-decoration-skip-ink: none;
-    margin-bottom: 25px; }
+    margin-bottom: 1vw;
+  }
 
 
 
 .research-philosophy .research-text {
-font-family: 'Lato', sans-serif; /* Font family */
-    font-weight: 600; /* Font weight */
-    font-size: 20px; /* Font size */
-    line-height: 36px; /* Line height */
+    font-family: 'Lato', sans-serif; /* Font family */
+    font-weight: 500; /* Font weight */
+    font-size: 1.2vw; /* Font size */
+    line-height: 1.7rem; /* Line height */
     color: #FFFFFF; /* Text color */
-    
     /* Box shadow (Drop shadow settings) */
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-        
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */  
     /* Background (optional if needed for visibility) */
     background-color: transparent; /* Transparent by default, adjust as needed */
     
@@ -130,7 +159,7 @@ font-family: 'Lato', sans-serif; /* Font family */
   /* Research Requirements Section */
 
   .research-requirements {
-    padding: 50px 20px;
+    padding-top: 8vw;  
   }
   
   .research-requirements .container {
@@ -138,27 +167,39 @@ font-family: 'Lato', sans-serif; /* Font family */
     margin-left: 9vw;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between rows */
+    gap: 3vw; /* Space between rows */
   }
 
   .research-requirements .research-requirements-heading {
     font-family: 'Open Sans', sans-serif; 
-    font-size: 34px; 
+    font-size: 2.5vw; 
     font-weight: 600; 
-    line-height: 51px; 
+    line-height: 3rem; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
     text-decoration-skip-ink: none; 
-    margin-bottom: 25px;
+    margin-bottom: 1.5vw;
+  }
+
+  .research-requirements .research-requirements-title {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 4vw; 
+    font-weight: 600; 
+    line-height: 1rem; 
+    letter-spacing: -0.02em; 
+    text-align: left; 
+    text-underline-position: from-font; 
+    text-decoration-skip-ink: none; 
+    margin-bottom: 2vw;
   }
 
 
   .research-requirements .research-requirements-paragraph {
     font-family: 'Lato', sans-serif; /* Font family */
-    font-weight: 600; /* Font weight */
-    font-size: 20px; /* Font size */
-    line-height: 36px; /* Line height */
+    font-weight: 500; /* Font weight */
+    font-size: 1.3vw; /* Font size */
+    line-height: 2rem; /* Line height */
     color: #FFFFFF; /* Text color */
     
     /* Box shadow (Drop shadow settings) */
@@ -175,7 +216,7 @@ font-family: 'Lato', sans-serif; /* Font family */
   .row {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between image and text */
+    gap: 1vw; /* Space between image and text */
   }
   
   .row-image {
@@ -188,76 +229,13 @@ font-family: 'Lato', sans-serif; /* Font family */
     flex: 1;
   }
   
-  .row-text h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
+ 
   
-  .row-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .row-image {
-      margin: 0 auto;
-    }
-  
-    .row-text {
-      text-align: center;
-    }
 
-    .research-requirements .research-requirements-heading {
-     text-align: center;
-      }
-    
-    
-      .research-requirements .research-requirements-paragraph {
-        font-family: 'Lato', sans-serif; /* Font family */
-        font-weight: 600; /* Font weight */
-        font-size: 20px; /* Font size */
-        line-height: 36px; /* Line height */
-        color: #FFFFFF; /* Text color */
-        
-        /* Box shadow (Drop shadow settings) */
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-            
-        /* Background (optional if needed for visibility) */
-        background-color: transparent; /* Transparent by default, adjust as needed */
-        
-    
-      }
-    
-    
-  }
   
         
 
-/* Flexbox Layout */
-.flex-container {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
 
-/* Left Column */
-.left-column {
-    flex: 1; /* Take up equal space with the right column */
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-}
 
 .section-title {
     font-size: 2.5rem;
@@ -268,18 +246,9 @@ font-family: 'Lato', sans-serif; /* Font family */
 
 
 
-/* Right Column */
-.right-column {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 200px;
-}
 
 /* Image Container */
 .image-container {
-    padding-top: 0px;
     flex: 1;
     max-width: 100%;
     display: flex;
@@ -295,19 +264,19 @@ font-family: 'Lato', sans-serif; /* Font family */
 .text-columns {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5vw;
 }
 
 .text-block h3 {
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 1.6vw;
     color: #fff;
 }
 
 
 
 
-/* Utility Classes */
+/* Partnerships section */
 
 .partnerships-section {
 padding-top: 10vw;
@@ -316,8 +285,8 @@ padding-top: 10vw;
 
   
 .partnerships-section .container {
-    margin-right: 9vw;
-    margin-left: 9vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
     display: flex;
     flex-direction: column;
   }
@@ -326,13 +295,14 @@ padding-top: 10vw;
 
   .partnerships-section .partnerships-heading {
     font-family: 'Open Sans', sans-serif; 
-    font-size: 54px; 
+    font-size: 4vw; 
     font-weight: 700; 
-    line-height: 81px; 
+    line-height: 1rem; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
     text-decoration-skip-ink: none; 
+    margin-bottom: 5vw;
 }
 
 .partnerships-row {
@@ -341,21 +311,21 @@ padding-top: 10vw;
 
 .partnerships-section .partnerships-subheading {
     font-family: 'Open Sans', sans-serif; 
-    font-size: 34px; 
+    font-size: 2.5vw; 
     font-weight: 600; 
-    line-height: 61.2px; 
+    line-height: 1rem; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
     text-decoration-skip-ink: none; 
-    margin-bottom: 1.8vw;
+    margin-bottom: 3vw;
 }
 
 .partnerships-section .partnerships-paragraph {
     font-family: 'Lato', sans-serif; 
-    font-size: 20px; 
-    font-weight: 600; 
-    line-height: 36px; 
+    font-size: 1.6vw; 
+    font-weight: 500; 
+    line-height: 1.8rem; 
     letter-spacing: -0.02em; 
     text-align: left; 
     text-underline-position: from-font; 
@@ -366,115 +336,6 @@ padding-top: 10vw;
 }
 
  
-/* Footer */
-
-.footer {
-    padding-top: 120px;
-    margin-top: 00px;
-    margin-right: 115px;
-    margin-left: 115px;
-
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 1px solid #555;
-    padding-bottom: 10px;
-  }
-  
-  .logo-and-links {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-logo {
-    margin-left: 10px;
-    width: 220px;
-    height: auto  }
-  
-  .footer-nav {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    margin-left: 17px;
-    gap:40px;
-  }
-  
-  .footer-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 15px;
-    font-weight: 500;
-  }
-  
-  .footer-nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons2 {
-    margin-top: 92px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 20px;
-    margin-right: 80px;
-  }
-  
-  .social-icons2 a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 18px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
-  }
-  
-  .social-icons2 a:hover {
-    transform: scale(1.2); /* Slightly enlarge the icon on hover */
-    filter: brightness(1.2); /* Increase brightness on hover */
-  }
-  
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  .legal-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 14px;
-  }
-  
-  .legal-links a:hover {
-    text-decoration: underline;
-  }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Utility Classes */
 .container {
@@ -587,28 +448,28 @@ padding-top: 10vw;
     text-decoration-skip-ink: none;
 }
 /* Background */
+/* Background */
 .bg-primary {
-    
-    background-image: url('../assets/image 44 (2).svg'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    min-height: 80vw; /* Ensures a taller background area */
-
+  position: relative; /* Ensures the pseudo-element is positioned relative to this */
+  background-image: url('../assets/image 44 (2).svg'); /* Path to your image */
+  background-position: center;
+  background-size: cover; /* Ensures image covers the full background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #fff;
+  min-height: 70vw; /* Ensures a taller background area */
 }
-.bg-footer {
-    background-color: #000;
-    background-image: url('../assets/image 38.png'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    min-height: 450px; /* Ensures a taller background area */
-    max-width: 2800px;
-    width: auto;
 
+/* Gradient Bottom Border */
+.bg-primary::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Border thickness */
+  background: linear-gradient(100deg, #0A2472, #A35C89); /* Gradient effect */
 }
+
 .bg-light {
     background: var(--light-color);
     color: #333;
@@ -626,5 +487,704 @@ padding-top: 10vw;
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #fff;
     min-height: 1300px; /* Ensures a taller background area */
+
+}
+
+
+@media (max-width: 1000px) {
+  .hero .hero-heading {
+      font-size: 3.4vw;
+      line-height: 3.5rem;
+  }
+
+  .hero {
+    padding-top: 40px; /* Accounts for navbar height */
+  }
+
+  .research-philosophy .research-heading {
+    font-size: 3.8vw;
+    line-height: 4.5rem;
+    margin-bottom: 0.5vw;
+  }
+
+  .research-philosophy .research-heading2 {
+    font-size: 2.1vw;
+    line-height: 1.6rem;
+  }
+
+  .research-philosophy .research-text {
+    font-size: 1.3vw;
+    line-height: 1.4rem;
+    margin-bottom: 1.5vw;
+  }
+
+  .left-column img {
+    width: 85%;
+    border-radius: 15px;
+}
+
+.text-columns {
+    gap: 1vw;
+}
+
+
+.text-block h3 {
+
+  margin-bottom: 1.5vw;
+
+}
+
+
+.right-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 14vw;
+}
+
+/* Left Column */
+.left-column {
+  flex: 1; /* Take up equal space with the right column */
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6vw;
+}
+
+
+
+
+.research-requirements .container {
+  gap: 2vw; /* Space between rows */
+}
+
+.research-requirements .research-requirements-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.5vw; 
+  font-weight: 600; 
+  line-height: 2.4rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+.research-requirements .research-requirements-title {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 4vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+
+.research-requirements .research-requirements-paragraph {
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-weight: 500; /* Font weight */
+  font-size: 1.3vw; /* Font size */
+  line-height: 1.7rem; /* Line height */
+  color: #FFFFFF; /* Text color */
+  
+  /* Box shadow (Drop shadow settings) */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
+      
+  /* Background (optional if needed for visibility) */
+  background-color: transparent; /* Transparent by default, adjust as needed */
+  
+
+}
+
+
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1vw; /* Space between image and text */
+}
+
+.row-image {
+  width: 27%;
+  height: auto;
+  object-fit: contain;
+}
+
+.partnerships-section .partnerships-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.8vw; 
+  font-weight: 700; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 4vw;
+}
+
+.partnerships-row {
+margin-bottom: 2.5vw;;
+}
+
+.partnerships-section .partnerships-subheading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.3vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 2vw;
+}
+
+.partnerships-section .partnerships-paragraph {
+  font-family: 'Lato', sans-serif; 
+  font-size: 1.5vw; 
+  font-weight: 500; 
+  line-height: 1.6rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  width: 78%;
+}
+
+
+
+}
+
+@media (max-width: 750px) {
+
+  .research-requirements {
+    padding-top: 4vw;  
+  }
+
+  .hero .hero-heading {
+      font-size: 3.2vw;
+      line-height: 2.8rem;
+  }
+  .hero {
+    padding-top: 30px; /* Accounts for navbar height */
+  }
+
+
+  .research-philosophy .research-heading {
+    font-size: 3.6vw;
+    line-height: 3.2rem;
+  }
+
+  .research-philosophy .research-heading2 {
+    font-size: 2vw;
+    line-height: 1.5rem;
+  }
+
+  .research-philosophy .research-text {
+    font-size: 1.4vw;
+    line-height: 1.2rem;
+    margin-bottom: 1vw;
+  }
+
+  .left-column img {
+    width: 85%;
+    border-radius: 15px;
+}
+
+.text-columns {
+  gap: 0.5vw;
+}
+
+
+.text-block h3 {
+
+  margin-bottom: 1.2vw;
+
+}
+
+
+.right-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12vw;
+}
+
+/* Left Column */
+.left-column {
+  flex: 1; /* Take up equal space with the right column */
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4vw;
+}
+
+
+.research-requirements .container {
+  gap: 2vw; /* Space between rows */
+}
+
+.research-requirements .research-requirements-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.2vw; 
+  font-weight: 600; 
+  line-height: 1.6rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+.research-requirements .research-requirements-title {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 4vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+
+.research-requirements .research-requirements-paragraph {
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-weight: 500; /* Font weight */
+  font-size: 1.3vw; /* Font size */
+  line-height: 1.2rem; /* Line height */
+  color: #FFFFFF; /* Text color */
+  
+  /* Box shadow (Drop shadow settings) */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
+      
+  /* Background (optional if needed for visibility) */
+  background-color: transparent; /* Transparent by default, adjust as needed */
+  
+
+}
+
+
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1vw; /* Space between image and text */
+}
+
+.row-image {
+  width: 29%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.partnerships-section .partnerships-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.8vw; 
+  font-weight: 700; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 3.5vw;
+}
+
+.partnerships-row {
+margin-bottom: 2.5vw;;
+}
+
+.partnerships-section .partnerships-subheading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.3vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 2vw;
+}
+
+.partnerships-section .partnerships-paragraph {
+  font-family: 'Lato', sans-serif; 
+  font-size: 1.4vw; 
+  font-weight: 500; 
+  line-height: 1.4rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  width: 75%;
+}
+
+
+
+
+
+}
+
+
+@media (max-width: 610px) {
+
+  .research-requirements {
+    padding-top: 2vw;  
+  }
+
+  .hero .hero-heading {
+      font-size: 3.2vw;
+      line-height: 2.2rem;
+  }
+
+  .hero {
+    padding-top: 20px; /* Accounts for navbar height */
+}
+
+
+.research-philosophy .research-heading {
+  font-size: 3.6vw;
+  line-height: 2.5rem;
+}
+
+.research-philosophy .research-heading2 {
+  font-size: 1.9vw;
+  line-height: 1.2rem;
+}
+
+.research-philosophy .research-text {
+  font-size: 1.5vw;
+  line-height: 1rem;
+}
+
+.left-column img {
+  width: 80%;
+  border-radius: 15px;
+}
+
+.text-columns {
+gap: 0.5vw;
+}
+
+
+.text-block h3 {
+
+margin-bottom: 1vw;
+
+}
+
+
+.right-column {
+flex: 2;
+display: flex;
+flex-direction: column;
+padding-top: 9vw;
+}
+
+/* Left Column */
+.left-column {
+flex: 1; /* Take up equal space with the right column */
+min-width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 2vw;
+}
+
+.left-column img {
+  width: 85%;
+  border-radius: 15px;
+}
+
+
+.research-requirements .container {
+  gap: 2vw; /* Space between rows */
+}
+
+.research-requirements .research-requirements-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2vw; 
+  font-weight: 600; 
+  line-height: 1.3rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+.research-requirements .research-requirements-title {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.6vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1vw;
+}
+
+
+.research-requirements .research-requirements-paragraph {
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-weight: 500; /* Font weight */
+  font-size: 1.4vw; /* Font size */
+  line-height: 1rem; /* Line height */
+  color: #FFFFFF; /* Text color */
+  
+  /* Box shadow (Drop shadow settings) */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
+      
+  /* Background (optional if needed for visibility) */
+  background-color: transparent; /* Transparent by default, adjust as needed */
+  
+
+}
+
+
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw; /* Space between image and text */
+}
+
+.row-image {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.partnerships-section .partnerships-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.8vw; 
+  font-weight: 700; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 3vw;
+}
+
+.partnerships-row {
+margin-bottom: 2.5vw;;
+}
+
+.partnerships-section .partnerships-subheading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.4vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1.8vw;
+}
+
+.partnerships-section .partnerships-paragraph {
+  font-family: 'Lato', sans-serif; 
+  font-size: 1.5vw; 
+  font-weight: 500; 
+  line-height: 1.1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  width: 75%;
+}
+
+
+
+
+
+
+}
+
+@media (max-width: 430px) {
+
+  .hero .hero-heading {
+      font-size: 3.5vw;
+      line-height: 2rem;
+  }
+
+  .hero {
+    padding-top: 10px; /* Accounts for navbar height */
+}
+
+.research-philosophy .research-heading {
+  font-size: 3.6vw;
+  line-height: 2rem;
+}
+
+.research-philosophy .research-heading2 {
+  font-size: 1.9vw;
+  line-height: 0.8rem;
+  margin-bottom: 0.5vw;
+}
+
+.research-philosophy .research-text {
+  font-size: 1.5vw;
+  line-height: 0.8rem;
+}
+
+.left-column img {
+  width: 80%;
+  border-radius: 15px;
+}
+
+.text-columns {
+gap: 0.5vw;
+}
+
+
+.text-block h3 {
+
+margin-bottom: 1vw;
+
+}
+
+
+.right-column {
+flex: 2;
+display: flex;
+flex-direction: column;
+padding-top: 8vw;
+}
+
+/* Left Column */
+.left-column {
+flex: 1; /* Take up equal space with the right column */
+min-width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 0vw;
+}
+
+.left-column img {
+  width: 85%;
+  border-radius: 15px;
+}
+
+
+
+
+.research-requirements .container {
+  gap: 2vw; /* Space between rows */
+}
+
+.research-requirements .research-requirements-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.2vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 0.8vw;
+}
+
+.research-requirements .research-requirements-title {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.6vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 0.8vw;
+}
+
+
+.research-requirements .research-requirements-paragraph {
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-weight: 500; /* Font weight */
+  font-size: 1.5vw; /* Font size */
+  line-height: 0.8rem; /* Line height */
+  color: #FFFFFF; /* Text color */
+  
+  /* Box shadow (Drop shadow settings) */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
+      
+  /* Background (optional if needed for visibility) */
+  background-color: transparent; /* Transparent by default, adjust as needed */
+  
+
+}
+
+
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw; /* Space between image and text */
+}
+
+.row-image {
+  width: 31%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.partnerships-section .partnerships-heading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 3.8vw; 
+  font-weight: 700; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 3vw;
+}
+
+.partnerships-row {
+margin-bottom: 2vw;;
+}
+
+.partnerships-section .partnerships-subheading {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.4vw; 
+  font-weight: 600; 
+  line-height: 1rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  margin-bottom: 1.5vw;
+}
+
+.partnerships-section .partnerships-paragraph {
+  font-family: 'Lato', sans-serif; 
+  font-size: 1.6vw; 
+  font-weight: 500; 
+  line-height: 0.9rem; 
+  letter-spacing: -0.02em; 
+  text-align: left; 
+  text-underline-position: from-font; 
+  text-decoration-skip-ink: none; 
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  width: 75%;
+}
 
 }
