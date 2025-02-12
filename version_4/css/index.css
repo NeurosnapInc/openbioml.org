@@ -565,9 +565,9 @@ img {
     text-decoration-skip-ink: none;
 }
 /* Background */
-.bg-primary {
+.bg-Background1 {
     
-    background-image: url('../assets/image 25.svg'); /* Path to your image */
+    background-image: url('../assets/home_Background1.png'); /* Path to your image */
     background-position: center;
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -577,29 +577,7 @@ img {
 
 }
 
-.bg-light {
-    background: var(--light-color);
-    color: #333;
-}
   
-.bg-dark {
-    background: #000;
-    color: #fff;
-    min-height: auto; /* Ensures a taller background area */
-    width: auto;
-}
-  
-.bg-black {
-    background-image: url('../image/image 25 (1).svg'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    min-height: 1300px; /* Ensures a taller background area */
-
-}
-
-
 
 /* Slideshow Container */
 .slideshow-container {

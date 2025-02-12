@@ -449,9 +449,9 @@ padding-top: 10vw;
 }
 /* Background */
 /* Background */
-.bg-primary {
+.bg-Background1 {
   position: relative; /* Ensures the pseudo-element is positioned relative to this */
-  background-image: url('../assets/image 44 (2).svg'); /* Path to your image */
+  background-image: url('../assets/approach_Background1.svg'); /* Path to your image */
   background-position: center;
   background-size: cover; /* Ensures image covers the full background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -460,7 +460,7 @@ padding-top: 10vw;
 }
 
 /* Gradient Bottom Border */
-.bg-primary::after {
+.bg-Background1::after {
   content: ""; /* Required for pseudo-elements */
   position: absolute;
   bottom: 0;

@@ -337,7 +337,7 @@ img {
 /* Background */
 .bg-primary {
     
-    background-image: url('../assets/backproj.svg'); /* Path to your image */
+    background-image: url('../assets/projects_Background.png'); /* Path to your image */
     background-position: center;
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -358,15 +358,7 @@ img {
   color: #fff;
 }
   
-.bg-black {
-    background-image: url('../assets/image 18.png'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    min-height: 1300px; /* Ensures a taller background area */
 
-}
 
 @media (max-width:1100px) {
 

@@ -208,9 +208,21 @@
 /* Utility Classes */
 
 
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+  
+.bg-dark {
+    background: #000;
+    color: #fff;
+    min-height: auto; /* Ensures a taller background area */
+    width: auto;
+}
+
 .bg-footer {
     background-color: #000;
-    background-image: url('../assets/image 38.png'); /* Path to your image */
+    background-image: url('../assets/footer_Background.png'); /* Path to your image */
     background-position: center;
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -229,8 +241,8 @@
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #fff;
-    max-height: auto; /* Ensures a taller background area */
     width: auto;
+    
 
 }
 
@@ -347,7 +359,7 @@
         transition: 0.3s ease-in-out;
     }
     .navbar .logo {
-        width: 23vw;
+        width: 20vw;
     }
 
     .navbar {

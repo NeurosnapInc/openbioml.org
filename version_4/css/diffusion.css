@@ -342,7 +342,7 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
 /* Background */
 .bg-primary {
     
-    background-image: url('../assets/backproj.svg'); /* Path to your image */
+    background-image: url('../assets/projects_Background.png'); /* Path to your image */
     background-position: center;
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -372,6 +372,21 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #fff;
     min-height: 1300px; /* Ensures a taller background area */
+
+}
+
+.bg-footer2 {
+    margin-top: 8vw;
+    background: rgba(0, 0, 0, 0.6); /* Optional: Add a slight transparent tint */
+    color: #fff; /* White text color for contrast */
+    height: 100%; /* Allow the background to grow with the content */
+    width: 100%; /* Ensure the background spans the full width */
+    background-position: center;
+    background-size: cover; /* Ensures image covers the full background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff;
+    width: auto;
+    
 
 }
 
@@ -577,6 +592,7 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
         text-decoration: underline; /* Add underline to the text */
         border-color: #C0B7E9;
         transition: transform 0.3s ease; /* Smooth hover effect */
+        margin-bottom: 5vw;
     }
 
     .nextPage .arrow-icon {
@@ -586,6 +602,7 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
         width: 1vw; /* Base size for the arrow */
         height: auto;
         transition: transform 0.3s ease; /* Smooth zoom effect */
+        margin-bottom: 5vw;
       }
 
     .flex-container {
@@ -632,6 +649,7 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
         text-decoration: underline; /* Add underline to the text */
         border-color: #C0B7E9;
         transition: transform 0.3s ease; /* Smooth hover effect */
+        margin-bottom: 25vw;
     }
 
 
@@ -639,6 +657,7 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
     .nextPage .arrow-icon {
         margin-left: 0.1vw;
         width: 1.5vw; /* Base size for the arrow */
+        margin-bottom: 25vw;
        
       }
 }
@@ -713,10 +732,33 @@ transition: transform 0.3s ease; /* Smooth zoom effect */
     }
 
 
-    .footer2 .bg-footer2 {
-       margin-top: 100vw;
-    
+    .bg-footer2 {
+        padding-bottom: 5vw;
     }
+
+
+    
+
+    .nextPage .nextPage-breadcrumb {
+        font-family: 'Lato', sans-serif; /* Use your font choice */
+        font-size: 1.6vw;
+        line-height: 1rem; /* Adjust spacing between the two lines */
+        text-align: left; /* Align text to the right */
+        margin-right: 1rem; /* Add space between the text and arrow */
+        text-decoration: underline; /* Add underline to the text */
+        border-color: #C0B7E9;
+        transition: transform 0.3s ease; /* Smooth hover effect */
+        margin-bottom: 70vw;
+    }
+
+
+
+    .nextPage .arrow-icon {
+        margin-left: 0.1vw;
+        width: 1.5vw; /* Base size for the arrow */
+        margin-bottom: 70vw;
+       
+      }
 
 }
 

@@ -187,7 +187,7 @@ img {
 /* Base Image */
 .team-base-image {
     position: relative;
-    background-image: url('../assets/Frame 2632.png'); /* Path to your image */
+    background-image: url('../assets/about_TeamBaseImage.png'); /* Path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -501,9 +501,9 @@ margin-top: 1vw; /* Adjust this value as needed */
 
 
 /* Background */
-.bg-primary {
+.bg-Background {
     
-    background-image: url('../assets/image 44.svg'); /* Path to your image */
+    background-image: url('../assets/about_Background1.svg'); /* Path to your image */
     background-position: center;
     background-size: cover; /* Ensures image covers the full background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
