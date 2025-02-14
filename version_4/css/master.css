@@ -35,7 +35,7 @@
     margin-top: 1vw;
     display: flex;
     justify-content: center;
-    width: 18vw;
+    width: 16vw;
     height: auto;
 }
 .navbar .main-menu {
@@ -60,6 +60,7 @@
 
 
 .navbar .login a:hover {
+    
     color: #4891ff;
 }
 
@@ -96,14 +97,22 @@
     filter: brightness(1.2);
 }
 
+.navbar .social-icons3 a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
 
+.navbar .logo a img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 
+}
 
 
 /* Footer */ 
 
 .footer2 {
-    padding-top: 3.5vw;
+    padding-top: 3vw;
     margin-right: 7vw;
     margin-left: 7vw;
     padding-bottom: 4vw;
@@ -139,7 +148,7 @@
     justify-content: space-between; /* Space between nav and social icons */
     align-items: center; /* Align nav and icons vertically */
     width: 100%; /* Ensure full width */
-    margin-bottom: 5vw;
+    margin-bottom: 2.5vw;
 }
 
 .footer-nav {
@@ -179,7 +188,7 @@
 }
 
 .footer-logo {
-    width: 16vw;
+    width: 15.5vw;
     height: auto;
     margin-bottom: 2.5vw;
     margin-left: 1vw;
@@ -247,19 +256,15 @@
 }
 
 
-
-/* Buttons */
 .btn {
+    position: relative; /* Needed for pseudo-element positioning */
     display: flex;
     justify-content: center;
     align-items: center;
-    width:205px;
-    height:52px;
-    padding-top: 10px;
-    padding-right:2px;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    color: #333; 
+    width: 205px;
+    height: 52px;
+    padding: 10px 2px;
+    color: #ffffff; 
     font-weight: 600;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
@@ -268,11 +273,29 @@
     cursor: pointer;
     text-align: center;
     transition: 0.5s;
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white), linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box; 
+    border: none; /* Remove default border */
 }
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px; /* Increase this for a thicker border */
+    border-radius: 9999px;
+    background: linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
+    -webkit-mask: 
+        linear-gradient(white, white) content-box, 
+        linear-gradient(white, white);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+
+
+
+
 
 .btn2 {
     width: 14vw;
@@ -370,20 +393,7 @@
     .btn {
         width: 150px;
         height: 41px;
-        color: #333;
-        font-weight: 600;
-        text-decoration: none;
-        font-family: 'Lato', sans-serif;
-        background: transparent;
-        border-radius: 9999px;
-        cursor: pointer;
-        text-align: center; /* Ensures text is centered */
-        transition: 0.5s;
-        border: 2px solid transparent;
-        background-image: linear-gradient(white, white), linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-
+     
     }
     
     .button-text {
@@ -408,7 +418,7 @@
 
 
     .footer-logo {
-        width: 18vw;
+        width: 16vw;
     }
 
     .legal-links a {
@@ -430,6 +440,10 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
     }
+
+    .footer-nav {
+        font-size: 1.8vw;
+    }   
 
 
 
@@ -539,6 +553,12 @@
 
     }
 
+    
+    .btn::before {
+        padding: 1px; /* Increase this for a thicker border */
+    }
+    
+
 
       
     .button-text {
@@ -554,7 +574,8 @@
 
 
     .footer-logo {
-        width: 20vw;
+        width: 17vw;
+        margin-bottom: 2vw;
     }
 
     .footer-bottom {
@@ -611,8 +632,8 @@
     
     .button-text {
         font-family: 'Lato', sans-serif;
-        font-size: 10px;
-        font-weight: 600;
+        font-size: 8px;
+        font-weight: 500;
         line-height: normal; /* Avoid fixed line height to prevent alignment issues */
         letter-spacing: -0.02em;
         text-align: center; /* Ensure text alignment */
