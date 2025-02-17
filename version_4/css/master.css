@@ -274,6 +274,7 @@
     text-align: center;
     transition: 0.5s;
     border: none; /* Remove default border */
+    
 }
 
 .btn::before {
@@ -293,7 +294,11 @@
 
 
 
+.btn:hover {
+    background-image: linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
+    color: #fff; 
 
+}
 
 
 

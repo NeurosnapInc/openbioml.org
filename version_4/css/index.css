@@ -156,13 +156,12 @@ img {
 .projects .projects-content {
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Aligns heading to the left and buttons to the right */
+    align-items: center; /* Ensures vertical alignment */
+
 }
 
 
-.projects .projects-heading {
-    color: #ffffff;
-    margin: 0; /* Remove default margin for proper alignment */
-}
+
 
 .projects .projects-buttons {
     display: flex; /* Enable Flexbox for buttons */
@@ -484,10 +483,7 @@ img {
 
 
 
-.btn:hover {
-    background-image: linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-    color: #fff; 
-}
+
 
 /* Text Classes */ 
 .text-xxl {
@@ -1038,9 +1034,9 @@ button:hover {
     .hero {
         padding-top: 60px; /* Adjusted padding for smaller screens */
     }
-    .hero-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
+    .hero .hero-heading {
+        font-size: 3.8vw;
+        line-height: 1.6rem;
     }
 
     .hero .hero-content {
@@ -1051,7 +1047,7 @@ button:hover {
         padding-bottom: 10vw;
     }
 
-    .hero-text {
+    .hero .hero-text {
         font-size: 2.2vw;
         line-height: 1rem;
     }

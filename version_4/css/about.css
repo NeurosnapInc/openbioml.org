@@ -933,6 +933,10 @@ margin-top: 1vw; /* Adjust this value as needed */
         margin-right:6vw;
     
     }
+
+    .testimonials .testimonials-grid {
+        gap: 4vw;
+    }
         /* Testimonial Heading */
         .testimonials .testimonial-heading {
         font-family: 'Open Sans', sans-serif; 
@@ -991,12 +995,12 @@ margin-top: 1vw; /* Adjust this value as needed */
             /* Base Image */
             .team-base-image {
                 position: relative;
-                background-image: url('../assets/Frame 2632.png'); /* Path to your image */
+                background-image: url('../assets/about_TeamBaseImage.png'); /* Path to your image */
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 width: 100%;
-                min-height: 85vw; /* Adjustable */
+                min-height: 88vw; /* Adjustable */
                 border-radius: 15px;
 }
            
