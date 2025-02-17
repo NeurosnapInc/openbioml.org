@@ -543,8 +543,13 @@
 
 
     .navbar {
-        height: 70px;
+        height: 65px;
     }
+
+    .navbar .container {
+        height: 65px;
+    }
+    
 
 
     .btn {

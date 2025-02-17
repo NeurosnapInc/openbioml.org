@@ -35,7 +35,7 @@ img {
 
 /* Hero */
 .hero {
-    padding-top: 80px; /* Accounts for navbar height */
+    padding-top: 4vw; /* Accounts for navbar height */
 }
 .hero .container {
     display:flex;
@@ -53,6 +53,8 @@ img {
     color: #ffffff;
     margin-bottom: 2vw;
     width: 70%;
+    font-size: 3.8vw;
+    line-height: 4rem;
 
 }
 
@@ -679,12 +681,14 @@ button:hover {
 
 
 @media (max-width: 1000px) {
-    .hero-heading {
-        font-size: 3.9vw;
-        line-height: 2.7rem;
+
+    .hero .hero-heading {
+        font-size: 3.6vw;
+        line-height: 2.8rem;
+        
     }
 
-    .hero-text {
+    .hero .hero-text {
         font-size: 1.8vw;
         line-height: 1.6rem;
     }
@@ -806,12 +810,16 @@ button:hover {
 
 
 @media (max-width: 750px) {
-    .hero-heading {
+
+    .hero .hero-content {
+        padding-top: 15vw;
+    }
+    .hero .hero-heading {
         font-size: 3.4vw;
-        line-height: 2rem;
+        line-height: 2.1rem;
     }
 
-    .hero-text {
+    .hero .hero-text {
         font-size: 1.6vw;
         line-height: 1.2rem;
     }
@@ -929,16 +937,16 @@ button:hover {
 
 @media (max-width: 610px) {
     .hero .hero-content {
-        padding-top: 10vw;
+        padding-top: 16vw;
     }
 
-    .hero-heading {
+    .hero .hero-heading {
         font-size: 3.4vw;
-        line-height: 1.6rem;
+        line-height: 1.7rem;
 
     }
 
-    .hero-text {
+    .hero .hero-text {
         font-size: 1.8vw;
         line-height: 1rem;
     }
