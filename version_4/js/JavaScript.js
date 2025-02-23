@@ -11,6 +11,7 @@ slides.forEach((_, i) => {
         showSlide(i); // Navigate to the clicked slide
         currentSlideIndex = i; // Update currentSlideIndex
         updateIndicators();
+        resetAutoChange(); // Reset auto-change timer on manual change
     });
     indicatorsContainer.appendChild(indicator);
 });
@@ -18,7 +19,9 @@ slides.forEach((_, i) => {
 function showSlide(index) {
     slides.forEach((slide, i) => {
         slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
     });
     updateIndicators();
 }
@@ -40,6 +43,24 @@ function updateIndicators() {
         indicator.classList.remove('active');
         if (i === currentSlideIndex) indicator.classList.add('active');
     });
+}
+
+// Add the slide transition effect
+slides.forEach(slide => {
+    slide.style.transition = "transform 0.5s ease-in-out";
+});
+
+// Auto-change slides every 3 seconds
+let autoChangeInterval = setInterval(() => {
+    changeSlide(1); // Change to next slide
+}, 3000);
+
+// Reset the auto-change timer when the user manually changes slides
+function resetAutoChange() {
+    clearInterval(autoChangeInterval);
+    autoChangeInterval = setInterval(() => {
+        changeSlide(1);
+    }, 8000);
 }
 
 // Initialize the first slide
