@@ -77,64 +77,31 @@ img {
     justify-content: flex-start; /* Align buttons to the left */
     align-items: center; /* Align buttons vertically to the center */
 }
-/* misson Section */
+
+
 .mission {
-    background-position: top right; /* Align background image to the top-right corner */
-    background-size: cover; /* Ensures the image covers the full section */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    position: relative;
-    padding: 30px 0; /* Reduced vertical padding to move the section higher */
-    display: flex; /* Enables flexbox for alignment */
-    justify-content: flex-end; /* Moves content to the right */
-    align-items: flex-start; /* Aligns content to the top */
-}
-.mission .mission-container {
-    position: relative; /* Establishes positioning context for absolute elements */
-    z-index: 2; /* Keeps the container above the image */
-    width: 67%; /* Container spans 59% of the screen */
-    text-align: right; /* Align text to the right */
-    padding-top: 0; /* Reduced padding to shift content higher */
-    height: 75vw;
-}
-
-.mission .mission-content {
-    margin-right: 7vw; /* Moves content to the left */
-    position: relative;
-    z-index: 3; /* Places text above the image and container */
-    background-size: contain;
-    background-position: center bottom;
-    height: 550px;
-}
-
-.mission .mission-heading {
-    color: #ffffff; /* Heading color */
-    text-align: right; /* Align heading to the right */
-    margin-bottom: 2vw; /* Adds spacing below the heading */
-}
-
-.mission .mission-text {
-    text-align: right; /* Align text to the right */
+    background: linear-gradient(45deg, #000000aa, #00000000), url("/assets/background2.webp");
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffffff;
-    margin-bottom: 2.5vw;
-    z-index: 1;
+    padding: 150px 7vw;
+    
+    .container {
+        margin-right: auto;
+        margin-left: 0px;
+        width: 40%;
+        min-width: 600px;
+    }
+
+    h2 {
+        font-size: 54px;
+    }
+
+    p {
+        margin-bottom: 1em;
+        font-size: 24px;
+    }
 }
-
-.mission .mission-buttons {
-    display: flex; /* Enable Flexbox for buttons */
-    justify-content: flex-end; /* Align buttons to the right */
-}
-
-.bottom-right-image {
-    position: absolute; /* Positions the image relative to the container */
-    bottom: 0; /* Aligns image to the bottom of the container */
-    right: 0; /* Aligns image to the right of the container */
-    width: 45vw; /* Set the desired width for the image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 0; /* Places the image behind other elements */
-}
-
-
-
 
 
 /* projects Section */
@@ -358,12 +325,11 @@ img {
     padding-top: 6vw;
     color: white;
 
-    /* Container for the section */
     .container {
         margin-left: 7vw;
         margin-right: 7vw;
         display: flex;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
 
     h2 {
@@ -375,7 +341,7 @@ img {
         margin-bottom: 2vw;
     }
 
-    .skills-image-container {
+    .card {
         width: 100%;
         background: radial-gradient(#000000aa, #00000000),url("/assets/home_SkillsBase.png");
         background-size: cover;
@@ -476,11 +442,6 @@ img {
     font-family: 'Open Sans', sans-serif; 
     font-size: 54px; 
     font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
 }
 
 .paragraph {
@@ -640,16 +601,6 @@ button:hover {
         line-height: 1.6rem;
     }
 
-    .mission .mission-heading {
-        font-size: 3.9vw;
-        line-height: 2.7rem;
-    }
-
-    .mission .mission-text {
-        font-size: 1.8vw;
-        line-height: 1.6rem;
-    }
-
     .projects .projects-heading {
         font-size: 4.6vw;
         line-height: 2.7rem;
@@ -693,31 +644,9 @@ button:hover {
         line-height: 2.7rem;
     }
 
-    .skills .skills-heading {
-        font-size: 4.4vw;
-        line-height: 2.7rem;
-    }
-
-    .skills .skills-paragraph {
-        font-size: 2vw;
-        line-height: 1.8rem;
-    }
-
-    .skills .skills-title {
-        font-size: max(3.5vw, 80px);
-        line-height: 2.7rem;
-    }
-
-
-
-
     .button-text {
         font-size: 1.2rem;
     }
-
-
-
-
 
     .btn {
         width: 150px;
@@ -771,16 +700,6 @@ button:hover {
         line-height: 1.2rem;
     }
 
-    .mission .mission-heading {
-        font-size: 3.4vw;
-        line-height: 2rem;
-    }
-
-    .mission .mission-text {
-        font-size: 1.6vw;
-        line-height: 1.2rem;
-    }
-
     .projects .projects-heading {
         font-size: 3.6vw;
         line-height: 2rem;
@@ -817,17 +736,6 @@ button:hover {
         font-size: 1.5vw;
         line-height: 1rem;
     }
-
-    .skills .skills-heading {
-        font-size: 3.6vw;
-        line-height: 2rem;
-    }
-
-    .skills .skills-paragraph {
-        font-size: 2vw;
-        line-height: 1.5rem;
-    }
-
 
 
     .button-text {
@@ -898,16 +806,6 @@ button:hover {
         line-height: 1rem;
     }
 
-    .mission .mission-heading {
-        font-size: 3.4vw;
-        line-height: 1.6rem;
-    }
-
-    .mission .mission-text {
-        font-size: 1.8vw;
-        line-height: 1rem;
-    }
-
     .projects .projects-heading {
         font-size: 3.6vw;
         line-height: 1.6rem;
@@ -940,21 +838,6 @@ button:hover {
         width: 68%;
         font-size: 1.6vw;
         line-height: 0.9rem;
-    }
-
-    .skills .skills-heading {
-        font-size: 3.6vw;
-        line-height: 1.6rem;
-    }
-
-    .skills .skills-paragraph {
-        font-size: 2vw;
-        line-height: 1.2rem;
-    }
-
-    .skills .skills-title {
-        font-size: 3.5vw;
-        line-height: 1.6rem;
     }
 
     
@@ -999,17 +882,6 @@ button:hover {
     }
 
     .hero .hero-text {
-        font-size: 2.2vw;
-        line-height: 1rem;
-    }
-
-    .mission .mission-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
-        margin-bottom: 2vw;
-    }
-    
-    .mission .mission-text {
         font-size: 2.2vw;
         line-height: 1rem;
     }
@@ -1060,22 +932,6 @@ button:hover {
     .journal-grid .card:nth-child(3) {
         display: none; /* Hide the third card */
     }
-
-    .skills .skills-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
-    }
-
-    .skills .skills-paragraph {
-        font-size: 2vw;
-        line-height: 0.8rem;
-    }
-
-    .skills .skills-title {
-        font-size: 3.5vw;
-        line-height: 1.5rem;
-    }
-    
 
     .indicator {
         width: 10vw;
