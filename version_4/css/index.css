@@ -355,105 +355,56 @@ img {
 
 /* Skills Section */
 .skills {
-    position: relative;
-    padding-top: 6vw; /* Space above the section */
+    padding-top: 6vw;
     color: white;
+
+    /* Container for the section */
+    .container {
+        margin-left: 7vw;
+        margin-right: 7vw;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    h2 {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 50px; 
+        font-weight: 700; 
+        line-height: 81px; 
+        letter-spacing: -0.02em; 
+        margin-bottom: 2vw;
+    }
+
+    .skills-image-container {
+        width: 100%;
+        background: radial-gradient(#000000aa, #00000000),url("/assets/home_SkillsBase.png");
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+        * {
+            margin: auto;
+        }
+
+        h3 {
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 50px; 
+            font-weight: 700; 
+            margin-bottom: .1em;
+        }
+    
+        p {
+            font-size: 36px;
+            font-family: 'Lato', sans-serif; 
+            margin-bottom: 1em;
+        }
+    }
 }
 
-/* Container for the section */
-.skills .container {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-}
 
-/* Top Title */
-.skills-heading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 4vw; 
-    font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    display: flex;
-    justify-content: left;
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 2vw;
-}
-
-/* Image Container */
-.skills-image-container {
-    position: relative; /* Create a positioning context for overlay */
-    width: 100%;
-}
-
-/* Base Image */
-.skill-base-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensure the image scales nicely */
-}
-
-/* Overlay Content */
-.skill-overlay-content {
-    position: absolute; /* Position relative to the image container */
-    top: 50%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%);
-    color: white; /* Ensure text contrast */
-    flex-direction: column; /* Stack elements vertically */
-    width: 60%; /* Ensure full width */
-    display: flex;
-    align-items: center;
-}
-
-/* Special Styling for Skill Title */
-.skill-overlay-content .title {
-    font-size: 3.1vw;
-}
-
-/* Paragraph Styling */
-.skill-overlay-content .paragraph {
-    font-size: 1.8vw;
-    line-height: 2rem;
-}
-
-.skills .skills-paragraph {
-    font-family: 'Lato', sans-serif; 
-    font-size: 2vw; 
-    font-weight: 500; 
-    line-height: 2.6rem; 
-    letter-spacing: -0.02em; 
-    text-align: center; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 2.5vw;
-  
-}
-
-.skills .skills-title {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 3.5vw; 
-    font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    text-align: center; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 1.5vw;
-}
-
-/* Button Styling */
-.skill-buttons .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-buttons .btn:hover {
-    background-color: #0056b3;
-}
 
 /* Background Class for Footer */
 .bg-footer { 
@@ -472,7 +423,7 @@ img {
 .container {
     max-width: auto;
     margin: 0 auto;
-    padding: 0 px;
+    padding: 0px;
 }
 
 .container-sm {
@@ -753,7 +704,7 @@ button:hover {
     }
 
     .skills .skills-title {
-        font-size: 3.5vw;
+        font-size: max(3.5vw, 80px);
         line-height: 2.7rem;
     }
 
