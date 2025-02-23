@@ -53,7 +53,7 @@ slides.forEach(slide => {
 // Auto-change slides every 3 seconds
 let autoChangeInterval = setInterval(() => {
     changeSlide(1); // Change to next slide
-}, 3000);
+}, 8000);
 
 // Reset the auto-change timer when the user manually changes slides
 function resetAutoChange() {
