@@ -265,15 +265,12 @@
     padding: 10px 2px;
     color: #ffffff; 
     font-weight: 600;
-    text-decoration: none;
     font-family: 'Lato', sans-serif;
     background: transparent;
     border-radius: 9999px;
     cursor: pointer;
     text-align: center;
     transition: 0.5s;
-    border: none; /* Remove default border */
-    
 }
 
 .btn::before {

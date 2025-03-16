@@ -144,7 +144,7 @@ p {
 /* Background Image Wrapper */
 .team-base-image {
     position: relative;
-    background-image: url('../assets/about_TeamBaseImage.png'); /* Background Image */
+    background-image: url('../assets/about_TeamBaseImage.webp'); /* Background Image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,10 +247,7 @@ p {
     padding-bottom: 32vw;
 }
   
-.bg-dark {
-    background: #000;
-  color: #fff;
-}
+
 
 
 

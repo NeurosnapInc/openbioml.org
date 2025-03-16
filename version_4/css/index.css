@@ -358,8 +358,6 @@ p2 {
     width: 100%; /* Ensure the background spans the full width */
 }
 
-  
-
 
 
 .slideshow-container {
@@ -456,7 +454,6 @@ button:hover {
         
     }   
 
-
     .projects {
         h4 {
             font-size: 30px;
@@ -466,11 +463,6 @@ button:hover {
             font-size: 30px;
         }
     }
-
-
-
-
-
 
 
 }
@@ -512,26 +504,10 @@ button:hover {
         line-height: 1.9rem;
         
     }
-
-
-
-    .indicator {
-        width: 9vw;
-        height: 4px;
-    }
-
-
-
-
-
-
 }
 
 
 @media (max-width: 610px) {
-
-
-
     .projects .projects-heading {
         font-size: 3.6vw;
         line-height: 1.6rem;
@@ -554,27 +530,6 @@ button:hover {
         top: 58%; /* Adjust the vertical alignment */
         
     }
-
-
-    
-
-    .button-text {
-        font-size: 1.2rem;
-    }
-
-    .navbar .nav-text {
-        font-size: 1rem;
-    }
-
-
-
-
-    .indicator {
-        width: 9vw;
-        height: 4px;
-    }   
-
-    
 
 }
 
