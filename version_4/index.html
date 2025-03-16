@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/master.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/assets/logo.svg" type="assets/x-icon">
+  <link rel="shortcut icon" href="/version_4/assets/logo.png" type="assets/x-icon">
 </head>
 
 
@@ -29,7 +29,7 @@
       <!-- Logo -->
       <div class="logo">
         <a href="index.html">
-          <img src="/assets/OBMLLogoText.png" alt="OpenBioML Logo">
+          <img src="/version_4/assets/OBMLLogoText.png" alt="OpenBioML Logo">
         </a>
       </div>
 
@@ -46,41 +46,37 @@
       <!-- Social Icons (Right Side) -->
       <div class="social-icons2">
         <a href="https://discord.com/invite/GgDBFP8ZEt/" target="_blank">
-          <img src="/assets/icons/discord.png" alt="Discord Icon">
+          <img src="/version_4/assets/icons/discord.png" alt="Discord Icon">
         </a>
         <a href="https://github.com/OpenBioML" target="_blank">
-          <img src="/assets/icons/github.png" alt="GitHub Icon">
+          <img src="/version_4/assets/icons/github.png" alt="GitHub Icon">
         </a>
         <a href="https://www.youtube.com/channel/UCJpyfeYRYvwVV4df7lqdfTQ" target="_blank">
-          <img src="/assets/icons/youtube.png" alt="YouTube Icon">
+          <img src="/version_4/assets/icons/youtube.png" alt="YouTube Icon">
         </a>
         <a href="https://x.com/openbioml" target="_blank">
-          <img src="/assets/icons/x.png" alt="Twitter Icon">
+          <img src="/version_4/assets/icons/x.png" alt="Twitter Icon">
         </a>
       </div>
     </div>
   </nav>
 
-  <!--Hero-->
-  <section class="hero bg-Background1">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-heading title">
-          Accelerating biology through <br> machine learning and open-science
-        </h1>
-
-        <p class="hero-text paragraph">
-          OpenBioML is a decentralized, collaborative research community founded on the belief that open source machine learning and open science can accelerate biotechnology. Join our Discord server, participate in the community's research, or suggest an entirely new project.
-        </p>
-
-        <div class="hero-buttons flex-gap">
-          <a href="https://discord.com/invite/GgDBFP8ZEt/" class="btn button-text">Join Discord</a>
-          <a href="https://github.com/OpenBioML/project-proposal-template" class="btn button-text">Propose Project</a>
-        </div>
-      </div>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h2>Accelerating biology through <b> machine learning and open-science</h2>
+    <p>
+      OpenBioML is a decentralized, collaborative research community founded on the belief that open-source machine learning and open science can accelerate biotechnology. Join our Discord server, participate in the community's research, or suggest an entirely new project.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://discord.com/invite/GgDBFP8ZEt/" class="btn button-text">Join Discord</a>
+      <a href="https://github.com/OpenBioML/project-proposal-template" class="btn button-text">Propose Project</a>
     </div>
-  </section>
+  </div>
+</section>
 
+
+<!-- Mission -->
 
   <section class="mission">
     <div class="container">
@@ -94,10 +90,10 @@
 
 
   <!-- Projects Section -->
-  <section class="projects bg-dark">
-    <div class="projects-container">
+  <section class="projects">
+    <div class="container">
       <div class="projects-content">
-        <h2 class="projects-heading title">Our Projects</h2>
+        <h2>Our Projects</h2>
         <div class="projects-buttons">
           <a href="projects.html" class="btn button-text">See Projects</a>
           <a href="https://github.com/OpenBioML/project-proposal-template" class="btn button-text">Propose Project</a>
@@ -107,23 +103,24 @@
       <!-- Slideshow Section -->
       <div class="slideshow-container">
         <!-- Slide 1 -->
-        <div class="slide active">
-          <div class="projects-dna-text projects-heading">DNA Diffusion</div>
-          <div class="projects-sub-text projects-text">
-            Understanding the code of life: generative models of regulatory <br>DNA sequences based on diffusion models.
+        <div class="slide">
+          <h3>DNA Diffusion
+          </h3>
+          <div class="projects-sub-text"> 
+            Understanding the code of life: generative models of regulatory <br>DNA sequences based on diffusion models. 
             <div class="projects-buttons">
               <a href="diffusion.html" class="btn button-text">Read More</a>
               <a href="https://github.com/pinellolab/DNA-Diffusion" class="btn button-text">See Project</a>
             </div>
           </div>
-          <img src="assets/home_ProjectsBase.png" alt="Base Image" class="projects-base-image">
+          <img src="assets/home_ProjectsBase.png" alt="Base Image">
           <img src="assets/home_ProjectsSlide1.png" alt="Overlay Image" class="projects-overlay-image">
         </div>
 
         <!-- Slide 2 -->
         <div class="slide">
-          <div class="projects-dna-text2 projects-heading">Large Language Chemistry <br>Dataset and Model</div>
-          <div class="projects-sub-text2 projects-text">
+          <h4>Large Language Chemistry <br>Dataset and Model</h3>
+          <div class="projects-sub-text2">
             From words to molecules: Unlocking the secrets of <br> chemistry with large language models
             <div class="projects-buttons">
               <a href="dataset.html" class="btn button-text">Read More</a>
@@ -139,44 +136,37 @@
     </div>
   </section>
 
-
-  <!-- Journals -->
-  <section class="journal bg-dark">
-    <div class="journal-container1">
-      <h3 class="journal-heading title">
-        Journal Club
-      </h3>
-      <div class="journal-content">
-        <p class="journal-paragraph paragraph">
-          Attend our journal clubs, where we have bi-weekly presentations with biology's best and brightest.
-          Catch up on the previous talks on our YouTube channel.
-        </p>
-        <a href="https://www.youtube.com/channel/UCJpyfeYRYvwVV4df7lqdfTQ" class="journal-button btn button-text">Watch Now</a>
-      </div>
-
-      <!-- TODO: Add hover animation -->
-      <div class="journal-grid">
-        <a class="card" href="https://youtu.be/vITWkCmuqFo">
-          <img src="assets/home_JournalYoutube1.png" alt="im1">
-          <p class="video-headings">
-            Practical Applications of ML in Biology & <br> Drug Discovery
-          </p>
-        </a>
-        <a class="card cardimg1" href="https://youtu.be/ZFzhFMl30oE">
-          <img src="assets/home_JournalYoutube2.png" alt="im2">
-          <p class="video-headings">
-            Disease Variant Prediction with Deep <br> Generative Models of Evolutionary Data
-          </p>
-        </a>
-        <a class="card" href="https://youtu.be/SFu8V0SvbdE">
-          <img src="assets/home_JournalYoutube3.png" alt="im3 ">
-          <p class="video-headings">
-            Dual-Use Risks of AI in Biology <br> &nbsp;
-          </p>
-        </a>
-      </div>
+<!-- Journals -->
+<section class="journal bg-dark">
+  <div class="container">
+    <h2>Journal Club</h2>
+    <div class="content">
+    <p2>
+      Attend our journal clubs, where we have bi-weekly presentations with biology's best and brightest. Catch up on the previous talks on our YouTube channel.
+    </p2>
+    <div class="journal-button">
+      <a href="https://www.youtube.com/channel/UCJpyfeYRYvwVV4df7lqdfTQ" class="btn button-text">Watch Now</a>
     </div>
-  </section>
+  </div> 
+  </div>
+
+
+  <!-- Journal Cards (Grid) -->
+  <div class="journal-grid">
+    <a class="card" href="https://youtu.be/vITWkCmuqFo">
+      <img src="assets/home_JournalYoutube1.png" alt="im1">
+      <p3>Practical Applications of ML in Biology & <br> Drug Discovery</p>
+    </a>
+    <a class="card cardimg1" href="https://youtu.be/ZFzhFMl30oE">
+      <img src="assets/home_JournalYoutube2.png" alt="im2">
+      <p3>Disease Variant Prediction with Deep <br> Generative Models of Evolutionary Data</p>
+    </a>
+    <a class="card" href="https://youtu.be/SFu8V0SvbdE">
+      <img src="assets/home_JournalYoutube3.png" alt="im3 ">
+      <p3>Dual-Use Risks of AI in Biology</p>
+    </a>
+  </div>
+</section>
 
   <!-- Skills Section -->
   <section class="skills bg-dark">
@@ -194,7 +184,7 @@
     <footer class="footer">
       <div class="footer-content">
         <!-- Logo -->
-        <img src="/assets/OBMLLogoText.png" alt="logo" class="footer-logo">
+        <img src="/version_4/assets/OBMLLogoText.png" alt="logo" class="footer-logo">
 
         <!-- Navigation + Social Icons -->
         <div class="nav-social">

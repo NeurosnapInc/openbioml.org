@@ -8,8 +8,8 @@ slides.forEach((_, i) => {
     indicator.classList.add('indicator');
     if (i === currentSlideIndex) indicator.classList.add('active');
     indicator.addEventListener('click', () => {
-        showSlide(i); // Navigate to the clicked slide
-        currentSlideIndex = i; // Update currentSlideIndex
+        showSlide(i);
+        currentSlideIndex = i;
         updateIndicators();
         resetAutoChange(); // Reset auto-change timer on manual change
     });
@@ -50,9 +50,9 @@ slides.forEach(slide => {
     slide.style.transition = "transform 0.5s ease-in-out";
 });
 
-// Auto-change slides every 3 seconds
+// Auto-change slides every 8 seconds
 let autoChangeInterval = setInterval(() => {
-    changeSlide(1); // Change to next slide
+    changeSlide(1);
 }, 8000);
 
 // Reset the auto-change timer when the user manually changes slides

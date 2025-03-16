@@ -33,543 +33,131 @@ img {
     max-width: 100%;
 }
 
-/* Hero */ 
 .hero {
-    padding-top: 80px; /* Accounts for navbar height */
-}
-.hero .container {
-    display:flex;
-    margin-left: 8vw;
-    background-size: contain;
-    background-position: center bottom;
-  }
-.hero .hero-content {
-    padding-top: 13vw;
-    width: 92%; 
-}
-
-.hero .hero-heading {
     color: #ffffff;
-    margin-bottom: 2vw;
-}
-
-.hero .hero-text {
-    color: #ffffff;
-    width: 70%;
-    margin-bottom: 2.5vw;
-}
-
-
-
-/* Flexbox for buttons with gap */
-.flex-gap {
-    display: flex; /* Use flexbox for alignment */
-    gap: 30px; /* Add space between buttons */
-    justify-content: flex-end; /* Align buttons to the left */
-    align-items: center; /* Align buttons vertically to the center */
-}
-
-
-
-
-
-
-
-
-/* Next */
-.diffusion {
-    padding-top: 15vw; /* Accounts for navbar height */
-}
-
-.diffusion .container {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-right: 7vw;
+    padding-left: 7vw;
     display: flex;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    background-size: contain;
-    background-position: center bottom;
-}
-
-.diffusion .diffusion-content {
-    display: flex;
-    flex-direction: column;
-    padding-top: 6vw;
-    width: 100%; /* Allocates space for the text */
-    text-align: right; /* Aligns all text within the container to the right */
-}
-
-.diffusion .diffusion-image {
-    width: 50%; /* Allocates space for the image */
-    display: flex;
-    align-items: center;
-    justify-content: left; /* Aligns the image to the left */
-}
-
-.diffusion .diffusion-image img {
-    max-width: 100%; /* Ensures the image scales within the container */
-    height: auto; /* Maintains the aspect ratio */
-}
-
-.diffusion .diffusion-heading {
-    text-align: right; /* Aligns the heading to the right */
-    margin-bottom: 2vw;
-}
-
-.diffusion .diffusion-text {
-    font-size: 2vw;
-    margin-bottom: 2.5vw;
-    text-align: right; /* Aligns the paragraph text to the right */
-}
-
-.diffusion .diffusion-buttons {
-    display: flex; 
-    justify-content: flex-end; /* Aligns the buttons to the right */
-    margin-bottom: 100px;
-}
 
 
-
-
-
-
-
-
-/* Flexbox for buttons with gap */
-.flex-gap2 {
-    display: flex; /* Use flexbox for alignment */
-    gap: 30px; /* Add space between buttons */
-    justify-content: flex-start; /* Align buttons to the left */
-    align-items: center; /* Align buttons vertically to the center */
-}
-
-
-
-
-/* Video */
-.dataset {
-    padding-top: 10vw; /* Accounts for navbar height */
-}
-
-.dataset .container {
-    display: flex;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    align-items: center;
-    background-size: contain;
-    background-position: center bottom;
-}
-
-.dataset .dataset-content {
-    justify-content: left;
-    text-align: left;
-    width: 100%; /* Allocates space for the text */
-}
-
-.dataset .dataset-image {
-    width: 50%; /* Allocates space for the image */
-    display: flex;
-    justify-content: right; /* Centers the image within its container */
-}
-
-.dataset .dataset-image img {
-    max-width: 100%; /* Ensures the image scales within the container */
-    height: auto; /* Maintains the aspect ratio */
-}
-
-.dataset .dataset-heading {
-    font-size: 3.8vw;
-    line-height: 3.8rem;
-    margin-bottom: 2vw;
-}
-
-.dataset .dataset-text {
-    font-size: 2vw;
-    margin-bottom: 2.5vw;
-}
-
-.dataset .dataset-button {
-    display: flex;
-    justify-content: start;    
-}
-
-
-
-/* Flexbox for buttons with gap */
-.flex-gap {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: left;
-    gap: 2vw; /* Add space between buttons */
-}
-
-
-
-
-
-
-
-/* Utility Classes */
 .container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0px;
+    margin-left: 0px;
+    width: 65%;
+    min-width: 600px;
 }
 
-.container-sm {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+h2 {
+    font-size: 44px;
+    margin-bottom: .1em;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+}
+.flex-gap {
+    display: flex; 
+    gap: 30px; 
+    justify-content: flex-end; 
+    align-items: center; 
 }
 
 
-/* Text Classes */ 
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 40px 0 20px;
+
+.diffusion {
+    padding-top: 8vw; 
+    padding-right: 7vw;
+    padding-left: 7vw;
+
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 5vw;
+    text-align: right;
+
 }
 
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
+img {
+    width: 40%; 
+    max-width: 500px;
+    height: auto;
 }
 
-.text-lg {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
+
+h2 {
+    font-size: 44px;
+    margin-bottom: .1em;
 }
 
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 20px 0 10px;
+p {
+    font-size: 22px;
+    margin-bottom: 1em;
 }
 
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
+.diffusion-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; 
+}
 }
 
-.title {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 54px; 
-    font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
+.dataset {
+    padding-top: 8vw; 
+    padding-right: 7vw;
+    padding-left: 7vw;
+
+.container {
+    display: flex;
+    align-items: center; /* Align image & text vertically */
+    justify-content: space-between; /* Push elements apart */
+    gap: 5vw;
 }
 
-.paragraph {
-    font-family: 'Lato', sans-serif; 
-    font-size: 22px; 
-    font-weight: 700; 
-    line-height: 39.6px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
+img {
+    width: 40%; /* Image takes 50% of space */
+    max-width: 500px;
+    height: auto;
 }
 
-.button-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 43.2px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+
+h2 {
+    font-size: 44px;
+    margin-bottom: .1em;
 }
-/* Background */
+
+p {
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+
+.dataset-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; 
+}
+}
+
 .bg-primary {
-    background-image: url('../assets/projects_Background.png'); /* Path to your image */
+    background-image: url('../assets/projects_Background.webp'); 
     background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: #fff;
     min-height: auto;
     width: 100%;
 
-}
-
-.bg-light {
-    background: var(--light-color);
-    color: #333;
-}
-  
-.bg-dark {
-    background: #000;
-  color: #fff;
-}
-  
-.bg-black {
-    background-image: url('../assets/image 18.png'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-
-}
-
-@media (max-width: 1000px) {
-
-    .hero-heading {
-        font-size: 3.9vw;
-        line-height: 2.7rem;
-    }
-
-    .hero-text {
-        font-size: 1.8vw;
-        line-height: 1.6rem;
-    }
-
-    .diffusion .diffusion-heading {
-        font-size: 3.9vw;
-        line-height: 2.7rem;
-    }
-
-    .diffusion .diffusion-text {
-        font-size: 2.2vw;
-        line-height: 1.6rem;
-    }
-
-    .diffusion .diffusion-content {
-        padding-top: 11vw;
-    }
-
-    .diffusion .diffusion-image {
-        width: 60%;
-    }
-
-    .dataset .dataset-heading {
-        font-size: 3.9vw;
-        line-height: 3.2rem;
-    }
-
-    .dataset .dataset-text {
-        font-size: 2.2vw;
-        line-height: 1.6rem;
-    }
-
-
-
-}
-
-@media (max-width: 750px) {
-
-    
-    .hero {
-        padding-top: 70px;
-    }
-
-    .diffusion {
-        padding-top: 5vw;
-    }
-
-    .hero-heading {
-        font-size: 3.4vw;
-        line-height: 2rem;
-    }
-
-    .hero-text {
-        font-size: 1.6vw;
-        line-height: 1.2rem;
-    }
-
-    .diffusion .diffusion-heading {
-        font-size: 3.4vw;
-        line-height: 2rem;
-    }
-
-    .diffusion .diffusion-text {
-        font-size: 2.2vw;
-        line-height: 1.2rem;
-    }
-
-    .diffusion .diffusion-content {
-        padding-top: 12vw;
-    }
-
-    .diffusion .diffusion-image {
-        width: 60%;
-    }
-
-    .dataset .dataset-heading {
-        font-size: 3.4vw;
-        line-height: 2.2rem;
-    }
-
-    .dataset .dataset-text {
-        font-size: 2.2vw;
-        line-height: 1.2rem;
-    }
-
-  
-
-
-}
-
-@media (max-width: 610px) {
-
-    
-    .hero {
-        padding-top: 65px;
-    }
-
-    .diffusion {
-        padding-top: 5vw;
-    }
-
-    .dataset {
-        padding-top: 3vw;
-    }
-    .hero .hero-content {
-        padding-top: 10vw;
-    }
-
-    .hero-heading {
-        font-size: 3.4vw;
-        line-height: 1.6rem;
-
-    }
-
-    .hero-text {
-        font-size: 1.8vw;
-        line-height: 1rem;
-    }
-
-    .diffusion .diffusion-heading {
-        font-size: 3.4vw;
-        line-height: 1.6rem;
-    }
-
-    .diffusion .diffusion-text {
-        font-size: 2.2vw;
-        line-height: 1rem;
-    }
-
-    .diffusion .diffusion-content {
-        padding-top: 15vw;
-    }
-
-    .diffusion .diffusion-image {
-        width: 62%;
-    }
-
-    .dataset .dataset-heading {
-        font-size: 3.4vw;
-        line-height: 1.8rem;
-    }
-
-    .dataset .dataset-text {
-        font-size: 2.2vw;
-        line-height: 1rem;
-    }
-  
-
-}
-
-@media (max-width: 430px) {
-
-    .hero {
-        padding-top: 60px;
-    }
-
-    .hero .hero-content {
-        width: 100%;
-    }
-
-    .hero-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
-    }
-
-    .hero-text {
-        font-size: 2vw;
-        line-height: 1rem;
-    }
-
-    .diffusion .diffusion-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
-    }
-
-    .diffusion .diffusion-text {
-        font-size: 2.1vw;
-        line-height: 1rem;
-    }
-
-
-    .diffusion {
-        padding-top: 5vw;
-    }
-
-    .diffusion .diffusion-content {
-        padding-top: 20vw;
-    }
-
-    .diffusion .diffusion-image {
-        width: 65%;
-    }
-
-    .dataset .dataset-heading {
-        font-size: 4vw;
-        line-height: 1.5rem;
-    }
-
-    .dataset .dataset-text {
-        font-size: 2.1vw;
-        line-height: 1rem;
-    }
-
-    .dataset .dataset-image {
-        width: 60%;
-        margin-bottom: 13vw;
-    }
-    
-  
-    
-    .button-text {
-        font-family: 'Lato', sans-serif;
-        font-size: 10px;
-        font-weight: 600;
-        line-height: normal; /* Avoid fixed line height to prevent alignment issues */
-        letter-spacing: -0.02em;
-        text-align: center; /* Ensure text alignment */
-        text-decoration-skip-ink: none;
-    }
-
-
-
-    .bg-footer2 {
-        padding-top: 3vw;
-        padding-bottom: 5vw;
-
-    }
-
-    .footer2 {
-        padding-top: 17vw;
-        margin-right: 7vw;
-        margin-left: 7vw;
-        padding-bottom: 4vw;
-        
-    }
-
-
-
-   
-
-
-
-  
 }
 
 

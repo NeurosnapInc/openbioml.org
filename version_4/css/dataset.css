@@ -30,309 +30,118 @@ ul {
 img {
     max-width: 100%;
 }
-
-/* readerpage Section */
+/* Reader Page Section */
 .prevPage {
     position: relative; /* Ensures proper stacking above the hero section */
-    padding-top: 11.5vw;
-    padding-left:8vw;
+    padding-top: 150px;
+    padding-left: 8vw;
     background: transparent; /* Transparent to show the global background */
-}
 
-.prevPage-container {
+
+/* Main container inside prevPage */ 
+.container {
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack breadcrumb and button vertically */
     align-items: flex-start; /* Align to the left */
-    gap: 10px; /* Space between breadcrumb and button */
+    gap: 1vw; /* Space between breadcrumb and button */
 }
 
-.prevPage-breadcrumb {
-    font-family: 'Lato', sans-serif; /* Use your font choice */
-    font-size: 1.6vw;
-    font-weight: 400px;
-    line-height: 1rem;
-    color: #D7D7D7; /* White text to match the theme */
-    margin-bottom: 1.1vw;
-}
-
-.prevPage-button {
-    font-family: 'Lato', sans-serif; /* Consistent font */
+/* Style for the paragraph inside .prevPage */
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
     font-size: 22px;
-    font-weight: 400;
-    line-height: 33px;
-    color: #000; /* Black text for contrast */
-    background-color: #ffffff; /* White button background */
-    padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 80%;
 }
-
-.prevPage-button:hover {
-    background-color: #f0f0f0; /* Slightly darker hover effect */
-    color: #000; /* Maintain contrast */
 }
-
 
 /* Hero */
 .hero {
     position: relative;
     padding-top: 2vw; /* Accounts for navbar height */
-}
 
-.hero .container {
+
+/* Container */
+.container {
     display: flex; /* Enable flexbox for horizontal alignment */
-    align-items: flex-start; /* Align content to the top */
-    margin-right: 8vw;
-    margin-left: 8vw;
+    align-items: center; /* Align content vertically in the center */
+    margin: 0 8vw;
     height: auto; /* Allow height to adjust dynamically */
+    gap: 3vw; /* Space between text and image */
 }
 
-.hero .hero-image {
-    display: flex;
-    justify-content: center;
-    align-self: flex-start; /* Ensures the image aligns to the top */
-    width: 35%; /* Allocate 35% of the container width for the image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.hero .hero-content {
-    text-align: left;
-    width: 65%; /* Allocate 60% of the container width for text */
-}
-
-
-.hero .hero-heading {
+/* Text Styling */
+h1 {
+    font-size: 44px;
+    margin-bottom: 0.2em;
     color: #ffffff;
-    margin-bottom: 3vw;
-    font-size: 3.4vw;
-    line-height: 3.8rem;
-    font-weight: 700;
 }
 
-.hero .hero-subheading {
+h2 {
+    font-size: 26px;
+    margin-bottom: 0.6em;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.8vw;
     font-weight: 600;
-    line-height: 2rem;
-    letter-spacing: -0.02em;
-    text-align: left;
-    margin-bottom: 2vw;
 }
 
-.hero .hero-text {
+p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.4vw;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 1.8rem;
-    letter-spacing: -0.02em;
-    text-align: left;
     color: #ffffff;
-    margin-bottom: 2.5vw;
     width: 100%;
+    margin-bottom: 1em;
 }
 
-.hero .hero-buttons {
-    display: flex;
-    gap: 15px; /* Add spacing between buttons */
-    justify-content: flex-start;
-    color: #000;
+/* Image Styling */
+.hero-image {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+}
 }
 
-
-/* Flexbox for buttons with gap */
-.flex-gap {
-    display: flex; /* Use flexbox for alignment */
-    gap: 30px; /* Add space between buttons */
-    justify-content: flex-start; /* Align buttons to the left */
-    align-items: center; /* Align buttons vertically to the center */
-}
-
-
+/* Next Page Section */
 .nextPage {
-    margin-top: 5vw;
-}
-
-.flex-container {
+    margin-top: 60px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 7.9vw;
-}
+    margin-left: 7vw;
 
-.button {
+
+.container {
     display: flex;
-    align-items: center; /* Center arrow vertically with the text */
+    align-items: center;
+    text-decoration: none;
     cursor: pointer;
     transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
-.button:hover {
+.container:hover {
     transform: scale(1.1); /* Enlarge text and arrow on hover */
 }
 
-.nextPage-breadcrumb {
-    font-family: 'Lato', sans-serif; /* Use your font choice */
-    font-size: 1.6vw;
-    line-height: 2rem; /* Adjust spacing between the two lines */
-    text-align: left; /* Align text to the right */
-    margin-right: 1rem; /* Add space between the text and arrow */
-    text-decoration: underline; /* Add underline to the text */
-    text-underline-offset: 4px; /* Moves underline further from text */
-    text-decoration-thickness: 1.5px; /* Adjust thickness of underline */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 1em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
     color: #D7D7D7;
 }
 
-    .arrow-icon {
-    display: flex;
-    justify-content: center;
-    width: 2.5vw; /* Base size for the arrow */
+/* Arrow Icon */
+.arrow-icon {
+    width: 30px; /* Base size for the arrow */
     height: auto;
-    transition: transform 0.3s ease; /* Smooth zoom effect */
-    }
-  
-
-/* Utility Classes */
-.container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0 px;
+    transition: transform 0.3s ease;
 }
-
-.container-sm {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
-
-
-
-
-
-.btn3 {
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Vertically center the text and arrow */
-    width: 301px; /* Fixed width */
-    height: 66px; /* Fixed height */
-    position: absolute; /* Position relative to the parent container */
-    gap: 0px; /* No gap between elements */
-    opacity: 1; /* Invisible (can be set to 1 for visibility) */
-    background-color: transparent; /* Transparent background */
-    border: none; /* No border */
-}
-
-.btn-arrow {
-    cursor: pointer; /* Pointer cursor for interactivity */
-    width: auto; /* Adjust the arrow width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.btn-arrow:hover {
-    transform: scale(1.2); /* Enlarge arrow slightly */
-    filter: brightness(1.2); /* Brighten arrow */
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transition: 0.3s;
-    background-image: linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-    color: #fff; 
-}
-
-.btn2:hover {
-    background-color: #C0B7E9;
-    color: #fff;
-    transition: 0.3s; 
-}
-
-/* Text Classes */ 
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 40px 0 20px;
-}
-
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
-}
-
-.text-lg {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
-}
-
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 20px 0 10px;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
-
-.title {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 54px; 
-    font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-}
-
-.paragraph {
-    font-family: 'Lato', sans-serif; 
-    font-size: 22px; 
-    font-weight: 700; 
-    line-height: 39.6px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-}
-
-.button-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 43.2px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-
-.button-text2 {
-    margin-left: 10px;
-    padding-bottom: 10px;
-    font-family: 'Lato', sans-serif; /* Font family */
-    font-size: 22px; /* Font size */
-    font-weight: 500; /* Font weight */
-    line-height: 33px; /* Line height */
-    letter-spacing: -0.02em; /* Letter spacing */
-    text-align: left; /* Align text to the left */
-    text-decoration-line: underline; /* Underlined text */
-    text-decoration-style: solid; /* Solid underline */
-    text-underline-position: from-font; /* Position underline based on font */
-    text-decoration-skip-ink: none; /* Prevent skipping under descenders */
-    color: #D7D7D7; /* Set text color (adjust as needed) */
-}
-
 
 /* Background */
 .bg-primary {
@@ -348,10 +157,6 @@ img {
 
 }
 
-.bg-light {
-    background: var(--light-color);
-    color: #333;
-}
   
 .bg-dark {
     background: #000;
@@ -359,392 +164,3 @@ img {
 }
   
 
-
-@media (max-width:1100px) {
-
-    .nextPage  .nextPage-breadcrumb {
-        line-height: 1.7rem; /* Adjust spacing between the two lines */
-        margin-bottom: 2px;
-    }
-
-
-    .nextPage   .arrow-icon {
-            display: flex;
-            justify-content: center;
-            margin-left: 1.1vw;
-            width: 2.4vw; /* Base size for the arrow */
-            height: auto;
-            transition: transform 0.3s ease; /* Smooth zoom effect */
-          }
-
-
-    .hero .hero-heading {   
-        font-size: 3.2vw;
-        line-height: 3rem;
-        margin-bottom: 2.8vw;
-      }
-
-    }
-
-
-@media (max-width: 1000px)  {
-
-        .prevPage {
-            padding-top: 12vw;
-            padding-left: 8vw;
-        }
-    
-        .prevPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 1.8vw;
-            font-weight: 400;
-            line-height: 1rem;
-            color: #D7D7D7; /* White text to match the theme */
-            margin-bottom: 0.8vw;
-        }
-    
-        .btn2 {
-            width: 15vw;
-            height: 4.2vw;
-            padding-top: 0.8vw;
-            padding-right:1.2vw;
-            padding-bottom: 0.8vw;
-            padding-left: 1.2vw;
-            gap: 10px;
-            border: 2px solid transparent;
-            border-radius: 35px 35px 35px 35px;
-            border-color: #C0B7E9;
-            background-color: transparent;
-            border-image-slice: 1;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            overflow: hidden; /* Ensure rounded corners are respected */
-        }
-            .nextPage .arrow-icon {
-                display: flex;
-                justify-content: center;
-                margin-left: 1vw;
-                width: 1vw; /* Base size for the arrow */
-                height: auto;
-                transition: transform 0.3s ease; /* Smooth zoom effect */
-              }
-    
-        .nextPage .nextPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 1.7vw;
-            line-height: 1.7rem; /* Adjust spacing between the two lines */
-            text-align: left; /* Align text to the right */
-            margin-right: 1rem; /* Add space between the text and arrow */
-            text-decoration: underline; /* Add underline to the text */
-            border-color: #C0B7E9;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-    
-        .nextPage .arrow-icon {
-            margin-left: 1vw;
-            width: 2.5vw; /* Base size for the arrow */
-            height: auto;
-            transition: transform 0.3s ease; /* Smooth zoom effect */
-          }
-    
-    
-          .hero .hero-heading {
-            color: #ffffff;
-            margin-bottom: 2.8vw;
-            font-size: 3vw;
-            line-height: 2.1rem;
-            font-weight: 700;
-          
-    }
-    
-        .hero .hero-content {
-            text-align: left;
-            width: 62%; /* Allocate 60% of the container width for text */
-        }
-    
-    .hero .hero-subheading {
-        font-size: 1.6vw;
-        font-weight: 600;
-        line-height: 1.5rem;
-        letter-spacing: -0.02em;
-        text-align: left;
-        margin-bottom: 1.5vw;
-    }
-    
-    .hero .hero-text {
-        font-size: 1.4vw;
-        font-weight: 600;
-        line-height: 1.4rem;
-        letter-spacing: -0.02em;
-        text-align: left;
-        color: #ffffff;
-        margin-bottom: 2vw;
-        width: 100%;
-    }
-    
-    .hero .hero-image {
-        width: 35%; /* Allocate 40% of the container width for the image */
-        height: auto; /* Maintain aspect ratio */
-    }
-    
-    .flex-container {
-        margin-right: 13vw;
-    
-    
-    }
-    
-    .nextPage .nextPage-breadcrumb {
-       
-        line-height: 1.5rem; /* Adjust spacing between the two lines */
-       
-    }
-    
-    .nextPage .arrow-icon {
-        margin-left: 0.2vw;
-        
-      }
-
-      .hero .hero-content {
-        width: 60%; /* Allocate 60% of the container width for text */
-    }
-
-    .hero .hero-image {
-        width: 40%; /* Allocate 40% of the container width for the image */
-        height: auto; /* Maintain aspect ratio */
-    }
-    
-    }
-    
-
-    @media (max-width: 750px)  {
-
-        .prevPage {
-            padding-top: 14vw;
-            padding-left: 8vw;
-        }
-    
-        .prevPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 1.6vw;
-            font-weight: 400;
-            line-height: 1rem;
-            margin-bottom: 0.5vw;
-        }
-    
-        .hero .hero-heading {
-            color: #ffffff;
-            margin-bottom: 2.6vw;
-            font-size: 3.1vw;
-            line-height: 2rem;
-            font-weight: 700;
-    }
-    
-        .hero .hero-subheading {
-            font-size: 1.6vw;
-            font-weight: 600;
-            line-height: 1.2rem;
-            letter-spacing: -0.02em;
-            text-align: left;
-            margin-bottom: 1.3vw;
-        }
-    
-        .hero .hero-text {
-            font-size: 1.4vw;
-            font-weight: 600;
-            line-height: 1.1rem;
-            letter-spacing: -0.02em;
-            text-align: left;
-            color: #ffffff;
-            margin-bottom: 1.8vw;
-            width: 100%;
-        }
-    
-        .btn2 { 
-            width: 15vw;
-            padding-left: 1px;
-            padding-right: 1.2vw;
-            padding-top: 0.8vw;
-            padding-bottom: 0.8vw;
-            margin-bottom: 2.5vw;
-            
-        }
-    
-    
-        .nextPage .nextPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 1.8vw;
-            line-height: 1.2rem; /* Adjust spacing between the two lines */
-            text-align: left; /* Align text to the right */
-            margin-right: 1rem; /* Add space between the text and arrow */
-            text-decoration: underline; /* Add underline to the text */
-            border-color: #C0B7E9;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-    
-        .nextPage .arrow-icon {
-            display: flex;
-            justify-content: center;
-            margin-left: 0.5vw;
-            width: 3vw; /* Base size for the arrow */
-            height: auto;
-            transition: transform 0.3s ease; /* Smooth zoom effect */
-          }
-    
-        .flex-container {
-            margin-right: 12.6vw;
-        }
-
-
-        .hero .hero-content {
-            width: 60%; /* Allocate 60% of the container width for text */
-        }
-
-        .hero .hero-image {
-            width: 40%; /* Allocate 40% of the container width for the image */
-            height: auto; /* Maintain aspect ratio */
-        }
-    
-    }
-    
-    @media (max-width: 610px) {
-    
-        .prevPage {
-            padding-top: 18vw;
-        }
-    
-        .prevPage-breadcrumb {
-            font-size: 1.8vw;
-            line-height: 3px;
-        }
-    
-        .hero .hero-heading {
-            font-size: 2.7vw;
-            line-height: 1.4rem;
-            margin-bottom: 2.5vw;
-        }   
-        .hero .hero-subheading {
-            font-size: 1.7vw;
-            line-height: 1rem;
-            margin-bottom: 1.2vw;
-        }
-
-        .hero .hero-content {
-            width: 60%; /* Allocate 60% of the container width for text */
-        }
-
-        .hero .hero-image {
-            width: 40%; /* Allocate 40% of the container width for the image */
-            height: auto; /* Maintain aspect ratio */
-        }
-    
-        .hero .hero-text {
-            font-size: 1.6vw;
-            line-height: 1rem;
-            margin-bottom: 2vw;
-        }
-    
-    
-    
-        .nextPage .nextPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 1.8vw;
-            line-height: 1rem; /* Adjust spacing between the two lines */
-            text-align: left; /* Align text to the right */
-            margin-right: 1rem; /* Add space between the text and arrow */
-            text-decoration: underline; /* Add underline to the text */
-            border-color: #C0B7E9;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-    
-    
-    
-        .nextPage .arrow-icon {
-            margin-left: 0.1vw;
-            width: 3.2vw; /* Base size for the arrow */
-           
-          }
-    }
-
-
-    @media (max-width:430px) {
-
-        .prevPage {
-            padding-top: 19vw;
-        }
-    
-        .prevPage-breadcrumb {
-            font-size: 2.5vw;
-            line-height: 3px;
-        }
-    
-        .hero .hero-content {
-            width: 65%; /* Allocate 60% of the container width for text */
-        }   
-    
-        .hero .hero-image {
-            width: 35%; /* Allocate 40% of the container width for the image */
-            height: auto; /* Maintain aspect ratio */
-        }
-    
-        .hero .hero-heading {
-            font-size: 3.5vw;
-            margin-bottom: 2.5vw;
-        }   
-        .hero .hero-subheading {
-            font-size: 2.3vw;
-            line-height: 1rem;
-            margin-bottom: 1.5vw;
-        }
-    
-        .hero .hero-text {
-            font-weight: 500;
-            font-size: 2.4vw;
-            line-height: 1rem;
-            margin-bottom: 3vw;
-        }
-    
-        .nextPage .nextPage-breadcrumb {
-            font-family: 'Lato', sans-serif; /* Use your font choice */
-            font-size: 2.8vw;
-            line-height: 1rem; /* Adjust spacing between the two lines */
-            text-align: left; /* Align text to the right */
-            margin-right: 1rem; /* Add space between the text and arrow */
-            text-decoration: underline; /* Add underline to the text */
-            border-color: #C0B7E9;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-    
-        .nextPage .arrow-icon {
-            margin-left: 1px;
-            width: 5vw; /* Base size for the arrow */
-           
-          }
-    
-        .flex-container {
-            margin-right: 12.6vw;
-        }
-    
-        .btn2 { 
-            width: 20vw;
-            height: 6vw;
-            padding-left: 1px;
-            padding-right: 1px;
-            padding-top: 0.8vw;
-            padding-bottom: 0.8vw;
-            margin-bottom: 2.5vw;
-            
-        }
-
-        .bg-footer2 {
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-    
-        }
-    
-        
-    
-    }
-    
-    

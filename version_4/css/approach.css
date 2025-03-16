@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; /* Default font for the page */
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background: #fff;
@@ -30,436 +30,228 @@ ul {
 img {
     max-width: 100%;
 }
-
 /* Hero */
 .hero {
-  padding-top: 50px; /* Accounts for navbar height */
-  display: flex;
+  padding-top: 350px;
+  padding-bottom: 300px;  display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   text-align: center;
   background-size: contain;
   background-position: center bottom;
+  background-size: cover;
+
+
+.container {
+  width: 100%;
+  margin: 0 7vw; /* More concise than margin-left & margin-right */
 }
 
-.hero .container {
-  width: 100%; /* Ensure the container takes full width */
-  margin-left: 7vw;
-  margin-right: 7vw;
-
-}
-
-.hero .hero-content {
-  justify-content: center;
-  text-align: center; /* Ensure content remains centered */
-  margin: 0 auto; /* Center content horizontally */
-}
-
-.hero .hero-heading {
-  font-family: 'Open sans', sans-serif; 
-  text-align: center; 
+/* Hero Heading */
+h2 {
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  font-weight: 600; 
-  margin-bottom: 2vw;
-  font-size: 3.4vw; 
-  line-height: 5rem; 
-  letter-spacing: -0.02em; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
+  font-size: 44px;
+  margin-bottom: .1em;
+  font-weight: 600;
 }
 
-.hero .hero-buttons {
-    color: #000;
 }
-
-/* Flexbox for buttons with gap */
-.flex-gap {
-    display: flex; /* Use flexbox for alignment */
-    gap: 30px; /* Add space between buttons */
-    justify-content: center; /* Center buttons horizontally */
-    align-items: center; /* Align buttons vertically */
-}
-
-
 
 
 /* Research Philosophy Section */
+.research-philosophy {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #121212; /* Dark background */
+  color: white;
 
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
 
 /* Left Column */
 .left-column {
-  flex: 1; /* Take up equal space with the right column */
+  flex: 1; /* Takes up equal space with the right column */
   min-width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 7vw;
+ 
 }
+
 /* Right Column */
 .right-column {
   flex: 2;
   display: flex;
   flex-direction: column;
-  padding-top: 15vw;
-}
-.research-philosophy {
-  padding: 60px 20px;
+  padding-top: 80px;
+  gap: 10px; /* Adds spacing between sections */
 }
 
-
-/* Flexbox Layout */
-.research-container {
-  margin-left: 6vw;
-  margin-right: 6vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+/* Headings */
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  margin-bottom: .1em;
+  font-weight: 600;
 }
 
-.research-philosophy .research-heading2 {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 2.1vw; 
-    font-weight: 600; 
-    line-height: 2.2rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: .1em;
+  font-weight: 600;
+  text-align: left;
 }
-.research-philosophy .research-heading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 4vw; 
-    font-weight: 700; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none;
-    margin-bottom: 1vw;
-  }
 
-
-
-.research-philosophy .research-text {
-    font-family: 'Lato', sans-serif; /* Font family */
-    font-weight: 500; /* Font weight */
-    font-size: 1.2vw; /* Font size */
-    line-height: 1.7rem; /* Line height */
-    color: #FFFFFF; /* Text color */
-    /* Box shadow (Drop shadow settings) */
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */  
-    /* Background (optional if needed for visibility) */
-    background-color: transparent; /* Transparent by default, adjust as needed */
-    
-
-
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: transparent;
 }
-       
-
-  /* Research Requirements Section */
-
-  .research-requirements {
-    padding-top: 8vw;  
-  }
-  
-  .research-requirements .container {
-    margin-right: 9vw;
-    margin-left: 9vw;
-    display: flex;
-    flex-direction: column;
-    gap: 3vw; /* Space between rows */
-  }
-
-  .research-requirements .research-requirements-heading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 2.5vw; 
-    font-weight: 600; 
-    line-height: 3rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 1.5vw;
-  }
-
-  .research-requirements .research-requirements-title {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 4vw; 
-    font-weight: 600; 
-    line-height: 1rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 2vw;
-  }
-
-
-  .research-requirements .research-requirements-paragraph {
-    font-family: 'Lato', sans-serif; /* Font family */
-    font-weight: 500; /* Font weight */
-    font-size: 1.3vw; /* Font size */
-    line-height: 2rem; /* Line height */
-    color: #FFFFFF; /* Text color */
-    
-    /* Box shadow (Drop shadow settings) */
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-        
-    /* Background (optional if needed for visibility) */
-    background-color: transparent; /* Transparent by default, adjust as needed */
-    
-
-  }
-
-
-  
-  .row {
-    display: flex;
-    align-items: center;
-    gap: 1vw; /* Space between image and text */
-  }
-  
-  .row-image {
-    width: 25%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .row-text {
-    flex: 1;
-  }
-  
  
-  
-
-  
-        
-
-
-
-.section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-
-
-
-/* Image Container */
-.image-container {
-    flex: 1;
-    max-width: 100%;
-    display: flex;
-    justify-content: left;
-}
-
+/* Image */
 .left-column img {
-    width: 75%;
-    border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2vw;
+}
 }
 
-/* Text Columns */
-.text-columns {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vw;
+/* Research Requirements Section */
+.research-requirements {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: black; /* Dark background */
+  color: white;
+
+
+/* Container */
+.container {
+  margin: 0 9vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw; /* Space between rows */
 }
 
-.text-block h3 {
-    font-weight: bold;
-    margin-bottom: 1.6vw;
-    color: #fff;
+/* Title */
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 2vw;
 }
 
+/* Subheadings */
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  margin-bottom: .1em;
+  font-weight: 600;
+}
 
+/* Paragraphs */
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+}
 
+/* Row Layout */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1vw; /* Space between image and text */
+}
 
-/* Partnerships section */
+/* Image */
+.row img {
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+}
 
+/* Text */
+.row-text {
+  flex: 1;
+}
+
+/* Partnerships Section */
 .partnerships-section {
-padding-top: 10vw;
+  padding-top: 50px;
+  background-color: black; /* Dark background */
+  color: white;
+
+ .container {
+  margin: 0 7vw;
+  display: flex;
+  flex-direction: column;
 }
 
-
-  
-.partnerships-section .container {
-    margin-right: 7vw;
-    margin-left: 7vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-
-  .partnerships-section .partnerships-heading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 4vw; 
-    font-weight: 700; 
-    line-height: 1rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 5vw;
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
 .partnerships-row {
-  margin-bottom: 2.5vw;;
+  margin-bottom: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
 }
 
-.partnerships-section .partnerships-subheading {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 2.5vw; 
-    font-weight: 600; 
-    line-height: 1rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    margin-bottom: 3vw;
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  margin-bottom: .1em;
+  font-weight: 600;
 }
 
-.partnerships-section .partnerships-paragraph {
-    font-family: 'Lato', sans-serif; 
-    font-size: 1.6vw; 
-    font-weight: 500; 
-    line-height: 1.8rem; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1.5vw;
-    width: 78%;
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: transparent;
+  width: 80%;
+}
 }
 
- 
-
-/* Utility Classes */
-.container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0 px;
-}
-
-.container-sm {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    width:245px;
-    height:63px;
-    padding-top: 10px;
-    padding-right:20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    color: #333; 
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    background: transparent;
-    border-radius: 9999px;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.5s;
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white), linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box; 
-}
-
-.btn:hover {
-    background-image: linear-gradient(94.5deg, #C0B7E9 6.39%, #5097F1 85.43%);
-    color: #fff; 
-}
-
-/* Text Classes */ 
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 40px 0 20px;
-}
-
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
-}
-
-.text-lg {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
-}
-
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 20px 0 10px;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
-
-.title {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 54px; 
-    font-weight: 700; 
-    line-height: 81px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-}
-
-.paragraph {
-    font-family: 'Lato', sans-serif; 
-    font-size: 22px; 
-    font-weight: 400; 
-    line-height: 39.6px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-}
-
-.button-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 43.2px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-/* Background */
-/* Background */
 .bg-Background1 {
-  position: relative; /* Ensures the pseudo-element is positioned relative to this */
-  background-image: url('../assets/approach_Background1.svg'); /* Path to your image */
+  position: relative; 
+  background-image: url('../assets/approach_Background1.webp'); 
   background-position: center;
   background-size: cover; /* Ensures image covers the full background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   color: #fff;
-  min-height: 70vw; /* Ensures a taller background area */
 }
 
-/* Gradient Bottom Border */
 .bg-Background1::after {
   content: ""; /* Required for pseudo-elements */
   position: absolute;
@@ -470,721 +262,7 @@ padding-top: 10vw;
   background: linear-gradient(100deg, #0A2472, #A35C89); /* Gradient effect */
 }
 
-.bg-light {
-    background: var(--light-color);
-    color: #333;
-}
-  
 .bg-dark {
     background: #000;
   color: #fff;
-}
-  
-.bg-black {
-    background-image: url('../assets/image 18.png'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    min-height: 1300px; /* Ensures a taller background area */
-
-}
-
-
-@media (max-width: 1000px) {
-  .hero .hero-heading {
-      font-size: 3.4vw;
-      line-height: 3.5rem;
-  }
-
-  .hero {
-    padding-top: 40px; /* Accounts for navbar height */
-  }
-
-  .research-philosophy .research-heading {
-    font-size: 3.8vw;
-    line-height: 4.5rem;
-    margin-bottom: 0.5vw;
-  }
-
-  .research-philosophy .research-heading2 {
-    font-size: 2.1vw;
-    line-height: 1.6rem;
-  }
-
-  .research-philosophy .research-text {
-    font-size: 1.3vw;
-    line-height: 1.4rem;
-    margin-bottom: 1.5vw;
-  }
-
-  .left-column img {
-    width: 85%;
-    border-radius: 15px;
-}
-
-.text-columns {
-    gap: 1vw;
-}
-
-
-.text-block h3 {
-
-  margin-bottom: 1.5vw;
-
-}
-
-
-.right-column {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  padding-top: 14vw;
-}
-
-/* Left Column */
-.left-column {
-  flex: 1; /* Take up equal space with the right column */
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 6vw;
-}
-
-
-
-
-.research-requirements .container {
-  gap: 2vw; /* Space between rows */
-}
-
-.research-requirements .research-requirements-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.5vw; 
-  font-weight: 600; 
-  line-height: 2.4rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-.research-requirements .research-requirements-title {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 4vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-
-.research-requirements .research-requirements-paragraph {
-  font-family: 'Lato', sans-serif; /* Font family */
-  font-weight: 500; /* Font weight */
-  font-size: 1.3vw; /* Font size */
-  line-height: 1.7rem; /* Line height */
-  color: #FFFFFF; /* Text color */
-  
-  /* Box shadow (Drop shadow settings) */
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-      
-  /* Background (optional if needed for visibility) */
-  background-color: transparent; /* Transparent by default, adjust as needed */
-  
-
-}
-
-
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1vw; /* Space between image and text */
-}
-
-.row-image {
-  width: 27%;
-  height: auto;
-  object-fit: contain;
-}
-
-.partnerships-section .partnerships-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.8vw; 
-  font-weight: 700; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 4vw;
-}
-
-.partnerships-row {
-margin-bottom: 2.5vw;;
-}
-
-.partnerships-section .partnerships-subheading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.3vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 2vw;
-}
-
-.partnerships-section .partnerships-paragraph {
-  font-family: 'Lato', sans-serif; 
-  font-size: 1.5vw; 
-  font-weight: 500; 
-  line-height: 1.6rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1vw;
-  width: 78%;
-}
-
-
-
-}
-
-@media (max-width: 750px) {
-
-  .research-requirements {
-    padding-top: 4vw;  
-  }
-
-  .hero .hero-heading {
-      font-size: 3.2vw;
-      line-height: 2.8rem;
-  }
-  .hero {
-    padding-top: 30px; /* Accounts for navbar height */
-  }
-
-
-  .research-philosophy .research-heading {
-    font-size: 3.6vw;
-    line-height: 3.2rem;
-  }
-
-  .research-philosophy .research-heading2 {
-    font-size: 2vw;
-    line-height: 1.5rem;
-  }
-
-  .research-philosophy .research-text {
-    font-size: 1.4vw;
-    line-height: 1.2rem;
-    margin-bottom: 1vw;
-  }
-
-  .left-column img {
-    width: 85%;
-    border-radius: 15px;
-}
-
-.text-columns {
-  gap: 0.5vw;
-}
-
-
-.text-block h3 {
-
-  margin-bottom: 1.2vw;
-
-}
-
-
-.right-column {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  padding-top: 12vw;
-}
-
-/* Left Column */
-.left-column {
-  flex: 1; /* Take up equal space with the right column */
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 4vw;
-}
-
-
-.research-requirements .container {
-  gap: 2vw; /* Space between rows */
-}
-
-.research-requirements .research-requirements-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.2vw; 
-  font-weight: 600; 
-  line-height: 1.6rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-.research-requirements .research-requirements-title {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 4vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-
-.research-requirements .research-requirements-paragraph {
-  font-family: 'Lato', sans-serif; /* Font family */
-  font-weight: 500; /* Font weight */
-  font-size: 1.3vw; /* Font size */
-  line-height: 1.2rem; /* Line height */
-  color: #FFFFFF; /* Text color */
-  
-  /* Box shadow (Drop shadow settings) */
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-      
-  /* Background (optional if needed for visibility) */
-  background-color: transparent; /* Transparent by default, adjust as needed */
-  
-
-}
-
-
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1vw; /* Space between image and text */
-}
-
-.row-image {
-  width: 29%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-.partnerships-section .partnerships-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.8vw; 
-  font-weight: 700; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 3.5vw;
-}
-
-.partnerships-row {
-margin-bottom: 2.5vw;;
-}
-
-.partnerships-section .partnerships-subheading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.3vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 2vw;
-}
-
-.partnerships-section .partnerships-paragraph {
-  font-family: 'Lato', sans-serif; 
-  font-size: 1.4vw; 
-  font-weight: 500; 
-  line-height: 1.4rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1vw;
-  width: 75%;
-}
-
-
-
-
-
-}
-
-
-@media (max-width: 610px) {
-
-  .research-requirements {
-    padding-top: 2vw;  
-  }
-
-  .hero .hero-heading {
-      font-size: 3.2vw;
-      line-height: 2.2rem;
-  }
-
-  .hero {
-    padding-top: 20px; /* Accounts for navbar height */
-}
-
-
-.research-philosophy .research-heading {
-  font-size: 3.6vw;
-  line-height: 2.5rem;
-}
-
-.research-philosophy .research-heading2 {
-  font-size: 1.9vw;
-  line-height: 1.2rem;
-}
-
-.research-philosophy .research-text {
-  font-size: 1.5vw;
-  line-height: 1rem;
-}
-
-.left-column img {
-  width: 80%;
-  border-radius: 15px;
-}
-
-.text-columns {
-gap: 0.5vw;
-}
-
-
-.text-block h3 {
-
-margin-bottom: 1vw;
-
-}
-
-
-.right-column {
-flex: 2;
-display: flex;
-flex-direction: column;
-padding-top: 9vw;
-}
-
-/* Left Column */
-.left-column {
-flex: 1; /* Take up equal space with the right column */
-min-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding-top: 2vw;
-}
-
-.left-column img {
-  width: 85%;
-  border-radius: 15px;
-}
-
-
-.research-requirements .container {
-  gap: 2vw; /* Space between rows */
-}
-
-.research-requirements .research-requirements-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2vw; 
-  font-weight: 600; 
-  line-height: 1.3rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-.research-requirements .research-requirements-title {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.6vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1vw;
-}
-
-
-.research-requirements .research-requirements-paragraph {
-  font-family: 'Lato', sans-serif; /* Font family */
-  font-weight: 500; /* Font weight */
-  font-size: 1.4vw; /* Font size */
-  line-height: 1rem; /* Line height */
-  color: #FFFFFF; /* Text color */
-  
-  /* Box shadow (Drop shadow settings) */
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-      
-  /* Background (optional if needed for visibility) */
-  background-color: transparent; /* Transparent by default, adjust as needed */
-  
-
-}
-
-
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1.5vw; /* Space between image and text */
-}
-
-.row-image {
-  width: 30%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-.partnerships-section .partnerships-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.8vw; 
-  font-weight: 700; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 3vw;
-}
-
-.partnerships-row {
-margin-bottom: 2.5vw;;
-}
-
-.partnerships-section .partnerships-subheading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.4vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1.8vw;
-}
-
-.partnerships-section .partnerships-paragraph {
-  font-family: 'Lato', sans-serif; 
-  font-size: 1.5vw; 
-  font-weight: 500; 
-  line-height: 1.1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1vw;
-  width: 75%;
-}
-
-
-
-
-
-
-}
-
-@media (max-width: 430px) {
-
-  .hero .hero-heading {
-      font-size: 3.5vw;
-      line-height: 2rem;
-  }
-
-  .hero {
-    padding-top: 10px; /* Accounts for navbar height */
-}
-
-.research-philosophy .research-heading {
-  font-size: 3.6vw;
-  line-height: 2rem;
-}
-
-.research-philosophy .research-heading2 {
-  font-size: 1.9vw;
-  line-height: 0.8rem;
-  margin-bottom: 0.5vw;
-}
-
-.research-philosophy .research-text {
-  font-size: 1.5vw;
-  line-height: 0.8rem;
-}
-
-.left-column img {
-  width: 80%;
-  border-radius: 15px;
-}
-
-.text-columns {
-gap: 0.5vw;
-}
-
-
-.text-block h3 {
-
-margin-bottom: 1vw;
-
-}
-
-
-.right-column {
-flex: 2;
-display: flex;
-flex-direction: column;
-padding-top: 8vw;
-}
-
-/* Left Column */
-.left-column {
-flex: 1; /* Take up equal space with the right column */
-min-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding-top: 0vw;
-}
-
-.left-column img {
-  width: 85%;
-  border-radius: 15px;
-}
-
-
-
-
-.research-requirements .container {
-  gap: 2vw; /* Space between rows */
-}
-
-.research-requirements .research-requirements-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.2vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 0.8vw;
-}
-
-.research-requirements .research-requirements-title {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.6vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 0.8vw;
-}
-
-
-.research-requirements .research-requirements-paragraph {
-  font-family: 'Lato', sans-serif; /* Font family */
-  font-weight: 500; /* Font weight */
-  font-size: 1.5vw; /* Font size */
-  line-height: 0.8rem; /* Line height */
-  color: #FFFFFF; /* Text color */
-  
-  /* Box shadow (Drop shadow settings) */
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
-      
-  /* Background (optional if needed for visibility) */
-  background-color: transparent; /* Transparent by default, adjust as needed */
-  
-
-}
-
-
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1.5vw; /* Space between image and text */
-}
-
-.row-image {
-  width: 31%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-
-.partnerships-section .partnerships-heading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3.8vw; 
-  font-weight: 700; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 3vw;
-}
-
-.partnerships-row {
-margin-bottom: 2vw;;
-}
-
-.partnerships-section .partnerships-subheading {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 2.4vw; 
-  font-weight: 600; 
-  line-height: 1rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  margin-bottom: 1.5vw;
-}
-
-.partnerships-section .partnerships-paragraph {
-  font-family: 'Lato', sans-serif; 
-  font-size: 1.6vw; 
-  font-weight: 500; 
-  line-height: 0.9rem; 
-  letter-spacing: -0.02em; 
-  text-align: left; 
-  text-underline-position: from-font; 
-  text-decoration-skip-ink: none; 
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1vw;
-  width: 75%;
-}
-
 }
