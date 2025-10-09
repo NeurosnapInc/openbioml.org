@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Base Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,13 +14,14 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    background: #fff;
+    line-height: 1.6;
+    background: #000;
+    color: #fff;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    color: #ffffff;
 }
 
 ul {
@@ -28,241 +29,183 @@ ul {
 }
 
 img {
+    display: block;
     max-width: 100%;
+    height: auto;
 }
+
 /* Hero */
 .hero {
-  padding-top: 350px;
-  padding-bottom: 300px;  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  text-align: center;
-  background-size: contain;
-  background-position: center bottom;
-  background-size: cover;
-
-
-.container {
-  width: 100%;
-  margin: 0 7vw; /* More concise than margin-left & margin-right */
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: clamp(160px, 24vw, 300px) clamp(24px, 8vw, 96px);
+    text-align: center;
 }
 
-/* Hero Heading */
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-size: 44px;
-  margin-bottom: .1em;
-  font-weight: 600;
+.hero .container {
+    width: min(880px, 90vw);
 }
 
-}
-
-
-/* Research Philosophy Section */
-.research-philosophy {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background-color: #121212; /* Dark background */
-  color: white;
-
-
-/* Container */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 6vw;
-  margin-right: 6vw;
-}
-
-/* Left Column */
-.left-column {
-  flex: 1; /* Takes up equal space with the right column */
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
- 
-}
-
-/* Right Column */
-.right-column {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  padding-top: 80px;
-  gap: 10px; /* Adds spacing between sections */
-}
-
-/* Headings */
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-size: 34px;
-  margin-bottom: .1em;
-  font-weight: 600;
-}
-
-h3,
-h4,
-h5 {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-size: 28px;
-  margin-bottom: .1em;
-  font-weight: 600;
-  text-align: left;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
-  background-color: transparent;
-}
- 
-/* Image */
-.left-column img {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 2vw;
-}
-}
-
-/* Research Requirements Section */
-.research-requirements {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background-color: black; /* Dark background */
-  color: white;
-
-
-/* Container */
-.container {
-  margin: 0 9vw;
-  display: flex;
-  flex-direction: column;
-  gap: 3vw; /* Space between rows */
-}
-
-/* Title */
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 1rem;
-  letter-spacing: -0.02em;
-  text-align: left;
-  margin-bottom: 2vw;
-}
-
-/* Subheadings */
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-size: 34px;
-  margin-bottom: .1em;
-  font-weight: 600;
-}
-
-/* Paragraphs */
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
-  background-color: transparent;
-}
-}
-
-/* Row Layout */
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1vw; /* Space between image and text */
-}
-
-/* Image */
-.row img {
-  width: 25%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Text */
-.row-text {
-  flex: 1;
-}
-
-/* Partnerships Section */
-.partnerships-section {
-  padding-top: 50px;
-  background-color: black; /* Dark background */
-  color: white;
-
- .container {
-  margin: 0 7vw;
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 1rem;
-  letter-spacing: -0.02em;
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-.partnerships-row {
-  margin-bottom: 2.5vw;
-  display: flex;
-  flex-direction: column;
-  gap:20px;
-
-}
-
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-size: 34px;
-  margin-bottom: .1em;
-  font-weight: 600;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
-  background-color: transparent;
-  width: 80%;
-}
+.hero h2 {
+    font-size: clamp(2rem, 2.4vw + 1.6rem, 3.1rem);
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 .bg-Background1 {
-  position: relative; 
-  background-image: url('../assets/approach_Background1.webp'); 
-  background-position: center;
-  background-size: cover; /* Ensures image covers the full background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: #fff;
+    background: linear-gradient(55deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.35)),
+        url('../assets/approach_Background1.webp') center / cover no-repeat;
 }
 
-.bg-Background1::after {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px; /* Border thickness */
-  background: linear-gradient(100deg, #0A2472, #A35C89); /* Gradient effect */
+/* Research Philosophy */
+.research-philosophy {
+    padding: clamp(80px, 14vw, 160px) 0;
 }
 
-.bg-dark {
+.research-philosophy .container {
+    width: min(1180px, 94vw);
+    margin: 0 auto;
+    display: grid;
+    gap: clamp(36px, 6vw, 56px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: start;
+}
+
+.left-column {
+    display: grid;
+    gap: clamp(18px, 3vw, 28px);
+}
+
+.left-column h2 {
+    font-size: clamp(2rem, 2.6vw, 2.8rem);
+    font-weight: 700;
+}
+
+.left-column p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1.05rem, 0.8vw + 1rem, 1.3rem);
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.left-column img {
+    width: min(520px, 100%);
+    border-radius: 18px;
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+    justify-self: center;
+}
+
+.right-column {
+    display: grid;
+    gap: clamp(24px, 3.8vw, 32px);
+}
+
+.right-column h3,
+.right-column h4,
+.right-column h5 {
+    font-size: clamp(1.4rem, 1vw + 1.2rem, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.right-column p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 0.7vw + 0.95rem, 1.25rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* Research Requirements */
+.research-requirements {
+    padding: clamp(90px, 16vw, 180px) 0;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8), rgba(10, 10, 20, 0.85));
+}
+
+.research-requirements .container {
+    width: min(1180px, 94vw);
+    margin: 0 auto;
+    display: grid;
+    gap: clamp(32px, 6vw, 48px);
+}
+
+.research-requirements h2 {
+    font-size: clamp(2.1rem, 2.6vw, 3rem);
+    font-weight: 700;
+}
+
+.row {
+    display: grid;
+    align-items: center;
+    gap: clamp(24px, 5vw, 48px);
+    grid-template-columns: minmax(200px, 320px) 1fr;
+}
+
+.row:nth-of-type(odd) {
+    direction: rtl;
+}
+
+.row:nth-of-type(odd) .row-text {
+    direction: ltr;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+}
+
+.row-text {
+    display: grid;
+    gap: clamp(12px, 2.4vw, 20px);
+}
+
+.row-text h3 {
+    font-size: clamp(1.4rem, 1.1vw + 1.2rem, 2rem);
+    font-weight: 700;
+}
+
+.row-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 0.6vw + 0.95rem, 1.2rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* Footer helpers */
+.bg-footer {
     background: #000;
-  color: #fff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 960px) {
+    .row,
+    .row:nth-of-type(odd) {
+        direction: ltr;
+        grid-template-columns: 1fr;
+    }
+
+    .row img {
+        max-width: 420px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: clamp(140px, 30vw, 220px) clamp(20px, 8vw, 60px);
+    }
+
+    .research-philosophy {
+        padding: clamp(72px, 26vw, 160px) 0;
+    }
+
+    .research-requirements {
+        padding: clamp(72px, 28vw, 160px) 0;
+    }
 }
