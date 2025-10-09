@@ -1,3 +1,9 @@
+/* Global layout helpers */
+:root {
+    --page-inline: clamp(24px, 8vw, 96px);
+    --content-max: 1120px;
+}
+
 /* Navbar */
 .navbar {
     position: absolute; /* Makes the navbar float over the hero */
@@ -25,9 +31,12 @@
 .navbar .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 95px;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
     background-size: contain;
     background-position: center bottom;
 }
@@ -111,19 +120,22 @@
 
 /* Footer */ 
 
-.footer2 {
-    padding-top: 3vw;
-    margin-right: 7vw;
-    margin-left: 7vw;
-    padding-bottom: 4vw;
-    
+.footer2,
+.footer {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
 }
 
 .footer {
-    padding-top: 8vw;
-    margin-right: 7vw;
-    margin-left: 7vw;
-    padding-bottom: 4vw;
+    padding-top: clamp(80px, 18vw, 140px);
+    padding-bottom: clamp(48px, 12vw, 80px);
+}
+
+.footer2 {
+    padding-top: clamp(48px, 12vw, 80px);
+    padding-bottom: clamp(32px, 8vw, 64px);
 }
 
 .footer-content {
@@ -154,9 +166,8 @@
 .footer-nav {
     display: flex;
     flex-direction: row; /* Navigation links in a row */
-    gap: 3vw; /* Space between nav links */
-    margin-left: 1.7vw;
-
+    gap: clamp(18px, 3vw, 32px); /* Space between nav links */
+    margin-left: 0;
 }
 
 .footer-nav a {
@@ -172,8 +183,8 @@
 
 .social-icons {
     display: flex;
-    margin-right: 5vw;
-    gap: 2vw; /* Space between social icons */
+    margin-right: 0;
+    gap: clamp(18px, 3vw, 32px); /* Space between social icons */
 }
 
 .social-icons a {
@@ -189,14 +200,14 @@
 }
 
 .footer-logo {
-    width: 15.5vw;
+    width: clamp(140px, 16vw, 220px);
     height: auto;
     margin-bottom: 2.5vw;
-    margin-left: 1vw;
+    margin-left: 0;
 }
 
 .footer-bottom {
-    font-size: 1.3vw;
+    font-size: clamp(0.9rem, 0.6vw + 0.8rem, 1.1rem);
     font-weight: 400;
     display: flex;
     justify-content: space-between;

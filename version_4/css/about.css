@@ -9,6 +9,8 @@
     --primary-color: #4891ff;
     --light-color: #f4f4f6;
     --dark-color: #111;
+    --page-inline: clamp(24px, 8vw, 96px);
+    --content-max: 1120px;
 }
 
 body {
@@ -39,7 +41,7 @@ img {
     position: relative;
     display: grid;
     place-items: center;
-    padding: clamp(160px, 25vw, 320px) clamp(24px, 8vw, 96px);
+    padding: clamp(160px, 25vw, 320px) 0;
     text-align: center;
     background: linear-gradient(55deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.35)),
         url('../assets/about_Background.webp') center / cover no-repeat;
@@ -59,8 +61,10 @@ img {
 }
 
 .testimonials .container {
-    width: min(1120px, 90vw);
+    width: 100%;
+    max-width: var(--content-max);
     margin: 0 auto;
+    padding-inline: var(--page-inline);
 }
 
 .testimonials .grid {
@@ -139,8 +143,10 @@ img {
 }
 
 .team .container {
-    width: min(1160px, 92vw);
+    width: 100%;
+    max-width: var(--content-max);
     margin: 0 auto;
+    padding-inline: var(--page-inline);
     display: grid;
     gap: clamp(32px, 6vw, 56px);
 }
@@ -287,4 +293,10 @@ img {
     .team-card {
         padding: clamp(20px, 6vw, 28px);
     }
+}
+.hero .container {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
 }

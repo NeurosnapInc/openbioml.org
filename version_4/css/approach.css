@@ -9,6 +9,8 @@
     --primary-color: #4891ff;
     --light-color: #f4f4f6;
     --dark-color: #111;
+    --page-inline: clamp(24px, 8vw, 96px);
+    --content-max: 1120px;
 }
 
 body {
@@ -39,12 +41,15 @@ img {
     position: relative;
     display: grid;
     place-items: center;
-    padding: clamp(160px, 24vw, 300px) clamp(24px, 8vw, 96px);
+    padding: clamp(160px, 24vw, 300px) 0;
     text-align: center;
 }
 
 .hero .container {
-    width: min(880px, 90vw);
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
 }
 
 .hero h2 {
@@ -65,8 +70,10 @@ img {
 }
 
 .research-philosophy .container {
-    width: min(1180px, 94vw);
+    width: 100%;
+    max-width: var(--content-max);
     margin: 0 auto;
+    padding-inline: var(--page-inline);
     display: grid;
     gap: clamp(36px, 6vw, 56px);
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -124,8 +131,10 @@ img {
 }
 
 .research-requirements .container {
-    width: min(1180px, 94vw);
+    width: 100%;
+    max-width: var(--content-max);
     margin: 0 auto;
+    padding-inline: var(--page-inline);
     display: grid;
     gap: clamp(32px, 6vw, 48px);
 }

@@ -9,6 +9,8 @@
     --primary-color: #4891ff;
     --light-color: #f4f4f6;
     --dark-color: #111;
+    --page-inline: clamp(24px, 8vw, 96px);
+    --content-max: 1120px;
 }
 
 body {
@@ -59,7 +61,7 @@ img {
 
 /* Breadcrumb */
 .prevPage {
-    padding: clamp(140px, 22vw, 200px) clamp(24px, 8vw, 96px) clamp(32px, 6vw, 48px);
+    padding: clamp(140px, 22vw, 200px) var(--page-inline) clamp(32px, 6vw, 48px);
 }
 
 .prevPage .container {
@@ -95,12 +97,14 @@ img {
 
 /* Hero */
 .hero {
-    padding: 0 clamp(24px, 8vw, 96px) clamp(60px, 10vw, 120px);
+    padding: 0 0 clamp(60px, 10vw, 120px);
 }
 
 .hero .container {
-    width: min(1180px, 94vw);
+    width: 100%;
+    max-width: var(--content-max);
     margin: 0 auto;
+    padding-inline: var(--page-inline);
     display: grid;
     gap: clamp(32px, 5vw, 48px);
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -144,7 +148,7 @@ img {
 
 /* Next Project link */
 .nextPage {
-    padding: clamp(20px, 6vw, 40px) clamp(24px, 8vw, 96px);
+    padding: clamp(20px, 6vw, 40px) var(--page-inline);
     display: flex;
     justify-content: flex-start;
 }
