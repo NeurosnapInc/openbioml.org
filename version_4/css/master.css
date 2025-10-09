@@ -86,47 +86,52 @@ img {
     height: auto;
 }
 
+section {
+    scroll-margin-top: calc(var(--nav-height) + 32px);
+}
+
 /* Navbar */
 .navbar {
-    position: absolute; /* Makes the navbar float over the hero */
-    top: 0; /* Positions it at the top of the page */
-    left: 0; /* Aligns it to the left */
-    width: 100%; /* Ensures it stretches full width */
-    z-index: 100; /* Ensures it stays above all other elements */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 120;
     height: var(--nav-height);
-    border: none; /* Remove border to avoid unnecessary outline */
-    padding-top: 0;
-    background: color-mix(in srgb, var(--surface) 86%, transparent); /* Subtle tint */
+    padding-block: clamp(12px, 2vw, 18px);
+    background: color-mix(in srgb, var(--surface) 78%, rgba(4, 18, 29, 0.65));
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 65%, transparent);
+    box-shadow: 0 18px 40px rgba(4, 18, 29, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar .nav-text {
-    font-family: 'Lato', sans-serif; 
-    font-size: 18px; 
-    font-weight: 400; 
-    line-height: 30px; 
-    letter-spacing: -0.02em; 
-    text-align: right; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
 .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
+    gap: clamp(16px, 4vw, 48px);
+    height: var(--nav-height);
     width: 100%;
-    max-width: var(--content-max);
-    margin: 0 auto;
-    padding-inline: var(--page-inline);
-    background-size: contain;
-    background-position: center bottom;
+    margin: 0;
+    padding-inline: clamp(18px, 6vw, 72px);
 }
 .navbar .logo {
-    margin-top: 1vw;
     display: flex;
-    justify-content: center;
-    width: 16vw;
+    align-items: center;
+    width: clamp(140px, 12vw, 200px);
     height: auto;
 }
 .navbar .main-menu {
@@ -136,39 +141,61 @@ img {
 .navbar .main-menu ul {
     display: flex;
     justify-content: center;
+    gap: clamp(18px, 4vw, 36px);
+}
+
+.navbar ul li {
+    position: relative;
 }
 
 .navbar ul li a {
-    padding: 1vw; /* Reduced padding for closer alignment */
-    display: block;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.navbar ul li a:hover {
-    color: var(--primary);
-}
-
-
-.navbar .login a:hover {
-    
-    color: var(--primary);
-}
-
-.navbar .social-icons2 {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    padding: 8px 4px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: color-mix(in srgb, var(--on-surface) 94%, white);
+    transition: color 0.3s ease;
 }
 
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--primary);
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+.navbar ul li a:hover,
+.navbar ul li a:focus-visible {
+    color: var(--primary);
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a:focus-visible::after,
+.navbar ul li a.highlighted::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.navbar .login a:hover {
+    color: var(--primary);
+}
+
+.navbar .social-icons2,
 .navbar .social-icons3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
-
+    gap: clamp(12px, 4vw, 28px);
 }
 
 .navbar .social-icons2 a img {
@@ -200,7 +227,7 @@ img {
 }
 
 
-/* Footer */ 
+/* Footer */
 
 .footer2,
 .footer {
@@ -315,7 +342,7 @@ img {
     background: var(--surface);
     color: var(--on-surface);
 }
-  
+
 .bg-dark {
     background: var(--background);
     color: var(--on-background);
@@ -343,7 +370,7 @@ img {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #fff;
     width: auto;
-    
+
 
 }
 
@@ -376,8 +403,8 @@ img {
     padding: 2px; /* Increase this for a thicker border */
     border-radius: 9999px;
     background: var(--gradient-primary);
-    -webkit-mask: 
-        linear-gradient(white, white) content-box, 
+    -webkit-mask:
+        linear-gradient(white, white) content-box,
         linear-gradient(white, white);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -455,7 +482,7 @@ img {
 
 /* Highlighted Class */
 .highlighted {
-    color: #CFD3FF; /* Text color */
+    color: var(--primary);
 }
 
 .card {
@@ -469,70 +496,48 @@ img {
     display: flex;
     flex-direction: column; /* Stack image and text */
     gap: 10px;
-    
+
 }
 
 @media (max-width: 1000px) {
+    :root {
+        --nav-height: 82px;
+    }
+
     .navbar .nav-text {
         font-size: 16px;
     }
 
-    .navbar ul li a {
-        padding: 1vw 0.8vw; /* Reduced padding for closer alignment */
-        display: block;
-        font-weight: 600;
-        transition: 0.5s;
-    }
-
     .navbar .container {
-        height: 80px;
-    }
-    .navbar .social-icons2 a img {
-        display: flex;
-        justify-self: center;
-        width: 19px; /* Adjusted size for alignment */
-        height: auto;
-        transition: 0.3s ease-in-out;
+        gap: clamp(12px, 5vw, 32px);
+        padding-inline: clamp(16px, 7vw, 48px);
     }
 
-    .navbar .social-icons3 a img {
-        display: flex;
-        justify-self: center;
-        width: 19px; /* Adjusted size for alignment */
-        height: auto;
-        transition: 0.3s ease-in-out;
+    .navbar ul li a {
+        padding: 6px 2px;
     }
+
     .navbar .logo {
-        width: 20vw;
+        width: clamp(120px, 18vw, 180px);
     }
 
-    .navbar {
-        height: 80px;
+    .navbar .social-icons2 a img,
+    .navbar .social-icons3 a img {
+        width: 20px;
     }
-    
-    
+
     .btn {
-        width: 160px;
-        height: 45px;
-     
-    }
-    
-    .button-text {
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: normal; /* Avoid fixed line height to prevent alignment issues */
-        letter-spacing: -0.02em;
-        text-align: center; /* Ensure text alignment */
-        text-decoration-skip-ink: none;
+        min-height: 48px;
+        padding-inline: clamp(20px, 6vw, 28px);
     }
 
+    .button-text {
+        font-size: 18px;
+    }
 
     .footer .social-icons {
         gap: 1.8vw;
-
     }
-
 
     .footer-logo {
         width: 16vw;
@@ -546,11 +551,9 @@ img {
         font-size: 1.5vw;
     }
 
-
     .footer-nav {
         font-size: 1.8vw;
-    }   
-
+    }
 }
 
 @media (max-width: 750px) {
@@ -576,11 +579,11 @@ img {
 
     .footer-logo {
         width: 19vw;
-    }   
+    }
 
     .footer-nav {
         font-size: 1.8vw;
-    }   
+    }
 
     .footer-bottom {
         font-size: 1.6vw;
@@ -621,19 +624,19 @@ img {
     .navbar .container {
         height: 65px;
     }
-    
 
 
- 
 
-    
+
+
+
     .btn::before {
         padding: 1px; /* Increase this for a thicker border */
     }
-    
 
 
-      
+
+
     .button-text {
         font-family: 'Lato', sans-serif;
         font-size: 10px;
@@ -660,5 +663,5 @@ img {
     }
 
 
-    
+
 }
