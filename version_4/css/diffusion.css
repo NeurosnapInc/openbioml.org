@@ -2,20 +2,32 @@
 .bg-primary {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(150deg,
-            color-mix(in srgb, var(--background) 90%, black),
-            color-mix(in srgb, var(--primary) 30%, transparent)),
-        url('../assets/projects_Background.png') center / cover no-repeat;
+    background: linear-gradient(60deg,
+            color-mix(in srgb, var(--background) 88%, black),
+            color-mix(in srgb, var(--primary) 42%, transparent));
     overflow: hidden;
     padding-bottom: clamp(80px, 18vw, 180px);
 }
 
-.bg-primary::after {
+.bg-primary::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 80% 15%, color-mix(in srgb, var(--primary) 44%, transparent), transparent 62%);
+    background: linear-gradient(135deg,
+            color-mix(in srgb, var(--primary) 30%, transparent),
+            color-mix(in srgb, var(--secondary) 24%, transparent));
+    opacity: 0.96;
+    mask-image: url('../assets/mask-topology.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-image: url('../assets/mask-topology.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
     pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 0;
 }
 
 .bg-primary > * {
