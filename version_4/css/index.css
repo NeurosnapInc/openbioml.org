@@ -2,7 +2,9 @@
 .hero {
     position: relative;
     padding: clamp(160px, 22vw, 320px) 0;
-    background: linear-gradient(60deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.35)),
+    background: linear-gradient(60deg,
+            color-mix(in srgb, var(--background) 88%, black),
+            color-mix(in srgb, var(--primary) 42%, transparent)),
         url('../assets/home_Background1.webp') center / cover no-repeat;
     overflow: hidden;
 }
@@ -39,7 +41,9 @@
 .mission {
     position: relative;
     padding: clamp(80px, 14vw, 160px) 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(10, 10, 20, 0.85)),
+    background: linear-gradient(135deg,
+            color-mix(in srgb, var(--background) 90%, black),
+            color-mix(in srgb, var(--secondary) 38%, transparent)),
         url('../assets/home_Background2.webp') top right / cover no-repeat;
     overflow: hidden;
 }
@@ -48,7 +52,9 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, transparent 0%, rgba(0, 0, 0, 0.75) 65%);
+    background: linear-gradient(120deg,
+            transparent 0%,
+            color-mix(in srgb, var(--accent) 80%, transparent) 68%);
     pointer-events: none;
 }
 
@@ -81,6 +87,9 @@
     display: grid;
     justify-items: center;
     gap: clamp(40px, 6vw, 64px);
+    background: linear-gradient(155deg,
+            color-mix(in srgb, var(--background) 94%, black),
+            color-mix(in srgb, var(--primary) 32%, transparent));
 }
 
 .projects .container {
@@ -122,9 +131,9 @@
     position: relative;
     border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow);
     min-height: clamp(320px, 40vw, 480px);
-    background: rgba(12, 12, 16, 0.6);
+    background: color-mix(in srgb, var(--surface) 84%, transparent);
 }
 
 .slide.active {
@@ -202,7 +211,7 @@
 }
 
 .indicator.active {
-    background: #fff;
+    background: color-mix(in srgb, var(--primary) 72%, white);
 }
 
 /* Journal */
@@ -210,6 +219,9 @@
     padding: clamp(90px, 18vw, 200px) 0;
     display: grid;
     gap: clamp(44px, 6vw, 64px);
+    background: linear-gradient(150deg,
+            color-mix(in srgb, var(--background) 90%, black),
+            color-mix(in srgb, var(--secondary) 30%, transparent));
 }
 
 .journal .container {
@@ -239,7 +251,7 @@
     min-width: min(320px, 100%);
     font-family: 'Lato', sans-serif;
     font-size: clamp(1rem, 0.7vw + 0.95rem, 1.3rem);
-    color: rgba(255, 255, 255, 0.82);
+    color: color-mix(in srgb, var(--on-surface) 88%, white);
     line-height: 1.85;
     max-width: 620px;
 }
@@ -265,15 +277,15 @@
     gap: clamp(12px, 1.8vw, 18px);
     padding-bottom: clamp(18px, 2.5vw, 24px);
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: color-mix(in srgb, var(--surface) 82%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .journal-grid .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 22px 46px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow-hov);
 }
 
 .journal-grid .card img {
@@ -286,13 +298,16 @@
     font-family: 'Lato', sans-serif;
     font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.18rem);
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.85);
+    color: color-mix(in srgb, var(--on-surface) 82%, white);
     padding: 0 clamp(16px, 2vw, 20px);
 }
 
 /* Skills */
 .skills {
     padding: clamp(80px, 16vw, 180px) 0;
+    background: linear-gradient(160deg,
+            color-mix(in srgb, var(--background) 92%, black),
+            color-mix(in srgb, var(--primary) 28%, transparent));
 }
 
 .skills .container {
@@ -317,9 +332,11 @@
     text-align: center;
     padding: clamp(36px, 5vw, 52px);
     border-radius: 22px;
-    background: linear-gradient(140deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.4)),
+    background: linear-gradient(140deg,
+            color-mix(in srgb, var(--primary) 22%, transparent),
+            color-mix(in srgb, var(--surface) 86%, transparent)),
         url('../assets/home_SkillsBase.png') center / cover no-repeat;
-    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow-hov);
 }
 
 .skills .card h3 {
@@ -331,7 +348,7 @@
     font-family: 'Lato', sans-serif;
     font-size: clamp(1.05rem, 0.8vw + 1rem, 1.3rem);
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.84);
+    color: color-mix(in srgb, var(--on-surface) 86%, white);
 }
 
 /* Responsive Tweaks */
@@ -342,7 +359,9 @@
         top: auto;
         left: auto;
         padding: clamp(24px, 5vw, 32px);
-        background: linear-gradient(140deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.3));
+        background: linear-gradient(140deg,
+                color-mix(in srgb, var(--surface) 86%, transparent),
+                color-mix(in srgb, var(--primary) 24%, transparent));
         backdrop-filter: blur(4px);
         margin: clamp(16px, 4vw, 28px);
         border-radius: 18px;

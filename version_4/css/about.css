@@ -5,7 +5,9 @@
     place-items: center;
     padding: clamp(160px, 25vw, 320px) 0;
     text-align: center;
-    background: linear-gradient(55deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.35)),
+    background: linear-gradient(55deg,
+            color-mix(in srgb, var(--background) 88%, black),
+            color-mix(in srgb, var(--primary) 38%, transparent)),
         url('../assets/about_Background.webp') center / cover no-repeat;
 }
 
@@ -20,6 +22,9 @@
 /* Testimonials */
 .testimonials {
     padding: clamp(60px, 12vw, 120px) 0;
+    background: linear-gradient(155deg,
+            color-mix(in srgb, var(--background) 92%, black),
+            color-mix(in srgb, var(--secondary) 28%, transparent));
 }
 
 .testimonials .container {
@@ -47,6 +52,7 @@
     color: #fff;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .testimonials .card::after {
@@ -64,7 +70,7 @@
 
 .testimonials .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow-hov);
 }
 
 .testimonials .card img {
@@ -84,24 +90,27 @@
     font-family: 'Lato', sans-serif;
     font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.2rem);
     line-height: 1.65;
-    color: rgba(255, 255, 255, 0.85);
+    color: color-mix(in srgb, var(--on-surface) 82%, white);
 }
 
 .testimonials .card:nth-of-type(1) {
-    background: radial-gradient(circle at top, rgba(255, 192, 114, 0.9), rgba(193, 66, 2, 0.92));
+    background: radial-gradient(circle at top, color-mix(in srgb, var(--primary) 82%, white), color-mix(in srgb, var(--tertiary) 72%, var(--primary)));
 }
 
 .testimonials .card:nth-of-type(2) {
-    background: radial-gradient(circle at top, rgba(150, 131, 236, 0.92), rgba(57, 5, 111, 0.95));
+    background: radial-gradient(circle at top, color-mix(in srgb, var(--secondary) 80%, var(--primary)), rgba(11, 98, 160, 0.92));
 }
 
 .testimonials .card:nth-of-type(3) {
-    background: radial-gradient(circle at top, rgba(63, 217, 214, 0.92), rgba(2, 84, 122, 0.94));
+    background: radial-gradient(circle at top, rgba(30, 202, 207, 0.92), rgba(6, 86, 124, 0.94));
 }
 
 /* Team */
 .team {
     padding: clamp(80px, 14vw, 160px) 0;
+    background: linear-gradient(160deg,
+            color-mix(in srgb, var(--background) 92%, black),
+            color-mix(in srgb, var(--primary) 30%, transparent));
 }
 
 .team .container {
@@ -128,7 +137,7 @@
     font-family: 'Lato', sans-serif;
     font-size: clamp(1.05rem, 0.8vw + 1rem, 1.3rem);
     line-height: 1.75;
-    color: rgba(255, 255, 255, 0.82);
+    color: color-mix(in srgb, var(--on-surface) 85%, white);
 }
 
 .team-base-image {
@@ -146,7 +155,9 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(145deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.45));
+    background: linear-gradient(145deg,
+            color-mix(in srgb, var(--primary) 22%, transparent),
+            color-mix(in srgb, var(--surface) 88%, transparent));
     backdrop-filter: blur(2px);
     z-index: 0;
 }
@@ -168,9 +179,9 @@
     gap: clamp(12px, 1.5vw, 18px);
     padding: clamp(24px, 3vw, 32px);
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    background: color-mix(in srgb, var(--surface) 86%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    box-shadow: var(--shadow);
     backdrop-filter: blur(6px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 100%;
@@ -178,7 +189,7 @@
 
 .team-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-hov);
 }
 
 .team-card h3 {
@@ -207,7 +218,7 @@
 
 .team-card .social-icons2 a:hover i {
     transform: translateY(-2px) scale(1.05);
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 /* Responsive Tweaks */

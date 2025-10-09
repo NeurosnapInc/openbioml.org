@@ -2,7 +2,9 @@
 .bg-primary {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(140deg, rgba(0, 0, 0, 0.82), rgba(8, 8, 16, 0.78)),
+    background: linear-gradient(140deg,
+            color-mix(in srgb, var(--background) 90%, black),
+            color-mix(in srgb, var(--primary) 30%, transparent)),
         url('../assets/projects_Background.png') center / cover no-repeat;
     overflow: hidden;
     padding-bottom: clamp(80px, 18vw, 180px);
@@ -12,7 +14,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 20% 20%, rgba(72, 145, 255, 0.2), transparent 55%);
+    background: radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--primary) 42%, transparent), transparent 60%);
     pointer-events: none;
 }
 
@@ -36,7 +38,7 @@
 .prevPage p {
     font-family: 'Lato', sans-serif;
     font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.18rem);
-    color: rgba(255, 255, 255, 0.78);
+    color: color-mix(in srgb, var(--on-surface) 78%, white);
 }
 
 .prevPage .btn2 {
@@ -45,8 +47,8 @@
     gap: 12px;
     padding: 10px 20px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: color-mix(in srgb, var(--surface) 80%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     transition: transform 0.3s ease, background 0.3s ease;
@@ -54,7 +56,7 @@
 
 .prevPage .btn2:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.22);
+    background: color-mix(in srgb, var(--primary) 28%, white);
 }
 
 /* Hero */
@@ -87,14 +89,14 @@
 .hero-content h2 {
     font-size: clamp(1.5rem, 1.2vw + 1.2rem, 2.1rem);
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.92);
+    color: color-mix(in srgb, var(--on-surface) 92%, white);
 }
 
 .hero-content p {
     font-family: 'Lato', sans-serif;
     font-size: clamp(1.02rem, 0.7vw + 0.95rem, 1.2rem);
     line-height: 1.85;
-    color: rgba(255, 255, 255, 0.84);
+    color: color-mix(in srgb, var(--on-surface) 86%, white);
 }
 
 .hero-content .btn {
@@ -105,7 +107,7 @@
     justify-self: center;
     width: min(420px, 100%);
     border-radius: 22px;
-    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow-hov);
 }
 
 /* Next Project link */
@@ -121,8 +123,8 @@
     gap: clamp(12px, 2vw, 18px);
     padding: 12px 22px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: color-mix(in srgb, var(--surface) 76%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
     font-family: 'Lato', sans-serif;
     font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.15rem);
     transition: transform 0.3s ease, background 0.3s ease;
@@ -130,7 +132,7 @@
 
 .nextPage .container:hover {
     transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.16);
+    background: color-mix(in srgb, var(--primary) 32%, white);
 }
 
 .arrow-icon {
