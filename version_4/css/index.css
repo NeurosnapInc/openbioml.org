@@ -18,11 +18,11 @@
     opacity: 0.96;
     mask-image: url('../assets/mask-topology.svg');
     mask-repeat: repeat;
-    mask-size: 45% auto;
+    mask-size: cover;
     mask-position: center;
     -webkit-mask-image: url('../assets/mask-topology.svg');
-    -webkit-mask-repeat: repeat;
-    -webkit-mask-size: 45% auto;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
     -webkit-mask-position: center;
     pointer-events: none;
     mix-blend-mode: screen;
@@ -239,11 +239,13 @@
 .indicator.active {
     background: color-mix(in srgb, var(--primary) 72%, white);
 }
+
 @keyframes slideFade {
     from {
         opacity: 0;
         transform: translateY(24px) scale(0.98);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -391,6 +393,7 @@
 
 /* Responsive Tweaks */
 @media (max-width: 920px) {
+
     .projects-sub-text,
     .projects-sub-text2 {
         position: relative;
@@ -422,8 +425,8 @@
         padding-bottom: clamp(32px, 8vw, 48px);
     }
 
-    .slide > h3,
-    .slide > h4 {
+    .slide>h3,
+    .slide>h4 {
         position: relative;
         top: auto;
         left: auto;

@@ -74,9 +74,7 @@
 .diffusion,
 .dataset {
     padding: clamp(80px, 16vw, 160px) 0;
-    background: linear-gradient(140deg,
-            color-mix(in srgb, var(--surface) 88%, transparent),
-            color-mix(in srgb, var(--primary) 22%, transparent));
+    background: var(--background);
 }
 
 .diffusion .container,
