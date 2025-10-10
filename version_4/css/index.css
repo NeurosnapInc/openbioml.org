@@ -63,11 +63,10 @@
 .mission {
     position: relative;
     padding: clamp(80px, 14vw, 160px) 0;
-    background: linear-gradient(135deg,
-            color-mix(in srgb, var(--background) 90%, black),
-            color-mix(in srgb, var(--secondary) 38%, transparent)),
-        url('../assets/home_Background2.webp') top right / cover no-repeat;
-    overflow: hidden;
+    background: var(--background);
+    background-image: radial-gradient(#7d7d7d9a 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -20px -20px;
 }
 
 .mission::after {
