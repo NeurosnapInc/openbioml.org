@@ -349,19 +349,14 @@ section {
 }
 
 .bg-footer {
-    background-color: color-mix(in srgb, var(--background) 95%, black);
-    background-image: url('../assets/footer_Background.png'); /* Path to your image */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background: color-mix(in srgb, var(--surface) 78%, rgba(4, 18, 29, 0.65));
     color: var(--on-surface);
     width: auto;
-
 }
 
 .bg-footer2 {
     margin-top: 8vw;
-    background: color-mix(in srgb, var(--surface) 86%, transparent); /* Optional: Add a slight transparent tint */
+    background: color-mix(in srgb, var(--surface) 78%, rgba(4, 18, 29, 0.65));
     color: var(--on-surface); /* White text color for contrast */
     height: 100%; /* Allow the background to grow with the content */
     width: 100%; /* Ensure the background spans the full width */
