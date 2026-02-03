@@ -236,11 +236,11 @@ nav {
         color-mix(in srgb, var(--primary) 30%, transparent),
         color-mix(in srgb, var(--secondary) 24%, transparent));
     opacity: 0.96;
-    mask-image: url('../assets/mask-topology.svg');
+    mask-image: url('../assets/mask_topology.svg');
     mask-repeat: repeat;
     mask-size: cover;
     mask-position: center;
-    -webkit-mask-image: url('../assets/mask-topology.svg');
+    -webkit-mask-image: url('../assets/mask_topology.svg');
     -webkit-mask-repeat: repeat;
     -webkit-mask-size: cover;
     -webkit-mask-position: center;
