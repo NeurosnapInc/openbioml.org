@@ -1,68 +1,3 @@
-/* Hero */
-.hero {
-  position: relative;
-  padding: clamp(160px, 22vw, 320px) 0;
-  background: linear-gradient(
-    60deg,
-    color-mix(in srgb, var(--background) 88%, black),
-    color-mix(in srgb, var(--primary) 42%, transparent)
-  );
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--primary) 30%, transparent),
-      color-mix(in srgb, var(--secondary) 24%, transparent)
-    );
-    opacity: 0.96;
-    mask-image: url('../assets/mask-topology.svg');
-    mask-repeat: repeat;
-    mask-size: cover;
-    mask-position: center;
-    -webkit-mask-image: url('../assets/mask-topology.svg');
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    -webkit-mask-position: center;
-    pointer-events: none;
-    mix-blend-mode: screen;
-    z-index: 0;
-  }
-
-  .container {
-    width: 100%;
-    max-width: var(--content-max);
-    margin: 0 auto;
-    padding-inline: var(--page-inline);
-    display: grid;
-    gap: clamp(18px, 3vw, 28px);
-    position: relative;
-    z-index: 1;
-  }
-
-  h2 {
-    font-size: clamp(2.4rem, 2.7vw + 1.6rem, 3.4rem);
-    line-height: 1.25;
-    letter-spacing: -0.015em;
-  }
-
-  p {
-    font-family: 'Lato', sans-serif;
-    font-size: clamp(1.05rem, 0.7vw + 1rem, 1.35rem);
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 1.8;
-  }
-
-  .hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(14px, 2vw, 24px);
-  }
-}
-
 /* Mission */
 .mission {
   position: relative;
@@ -259,14 +194,6 @@
 @media (max-width: 640px) {
   body {
     font-size: 15px;
-  }
-
-  .hero {
-    padding: clamp(140px, 28vw, 220px) 0;
-
-    .container {
-      gap: clamp(16px, 5vw, 24px);
-    }
   }
 
   .mission {
