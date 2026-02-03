@@ -1,122 +1,138 @@
 /* Testimonials */
 .testimonials {
   padding: clamp(60px, 12vw, 120px) 0;
-  background: linear-gradient(155deg,
-      color-mix(in srgb, var(--background) 92%, black),
-      color-mix(in srgb, var(--secondary) 28%, transparent));
-}
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--background) 92%, black),
+    color-mix(in srgb, var(--secondary) 28%, transparent)
+  );
 
-.testimonials .container {
-  width: 100%;
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding-inline: var(--page-inline);
-}
+  .container {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
+  }
 
-.testimonials .grid {
-  display: grid;
-  gap: clamp(24px, 4vw, 36px);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
+  .grid {
+    display: grid;
+    gap: clamp(24px, 4vw, 36px);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 
-.testimonials .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: clamp(12px, 1.5vw, 18px);
-  padding: clamp(24px, 2.8vw, 36px);
-  border-radius: 18px;
-  color: #fff;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: var(--shadow);
-}
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: clamp(12px, 1.5vw, 18px);
+    padding: clamp(24px, 2.8vw, 36px);
+    border-radius: 18px;
+    color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow);
 
-.testimonials .card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35));
-  z-index: 0;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35));
+      z-index: 0;
+    }
 
-.testimonials .card>* {
-  position: relative;
-  z-index: 1;
-}
+    > * {
+      position: relative;
+      z-index: 1;
+    }
 
-.testimonials .card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hov);
-}
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hov);
+    }
 
-.testimonials .card img {
-  width: clamp(90px, 10vw, 120px);
-  margin-bottom: clamp(8px, 1vw, 16px);
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
-}
+    img {
+      width: clamp(90px, 10vw, 120px);
+      margin-bottom: clamp(8px, 1vw, 16px);
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    }
 
-.testimonials .card p:first-of-type {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
-  font-weight: 700;
-  margin-bottom: 0;
-}
+    p:first-of-type {
+      font-family: 'Open Sans', sans-serif;
+      font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
+      font-weight: 700;
+      margin-bottom: 0;
+    }
 
-.testimonials .card p:last-of-type {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.2rem);
-  line-height: 1.65;
-  color: color-mix(in srgb, var(--on-surface) 82%, white);
-}
+    p:last-of-type {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.2rem);
+      line-height: 1.65;
+      color: color-mix(in srgb, var(--on-surface) 82%, white);
+    }
 
-.testimonials .card:nth-of-type(1) {
-  background: radial-gradient(circle at top, color-mix(in srgb, var(--primary) 82%, white), color-mix(in srgb, var(--tertiary) 72%, var(--primary)));
-}
+    &:nth-of-type(1) {
+      background: radial-gradient(
+        circle at top,
+        color-mix(in srgb, var(--primary) 82%, white),
+        color-mix(in srgb, var(--tertiary) 72%, var(--primary))
+      );
+    }
 
-.testimonials .card:nth-of-type(2) {
-  background: radial-gradient(circle at top, color-mix(in srgb, var(--secondary) 80%, var(--primary)), rgba(11, 98, 160, 0.92));
-}
+    &:nth-of-type(2) {
+      background: radial-gradient(
+        circle at top,
+        color-mix(in srgb, var(--secondary) 80%, var(--primary)),
+        rgba(11, 98, 160, 0.92)
+      );
+    }
 
-.testimonials .card:nth-of-type(3) {
-  background: radial-gradient(circle at top, rgba(30, 202, 207, 0.92), rgba(6, 86, 124, 0.94));
+    &:nth-of-type(3) {
+      background: radial-gradient(
+        circle at top,
+        rgba(30, 202, 207, 0.92),
+        rgba(6, 86, 124, 0.94)
+      );
+    }
+  }
 }
 
 /* Team */
 .team {
   padding: clamp(80px, 14vw, 160px) 0;
-  background: linear-gradient(160deg,
-      color-mix(in srgb, var(--background) 92%, black),
-      color-mix(in srgb, var(--primary) 30%, transparent));
-}
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--background) 92%, black),
+    color-mix(in srgb, var(--primary) 30%, transparent)
+  );
 
-.team .container {
-  width: 100%;
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding-inline: var(--page-inline);
-  display: grid;
-  gap: clamp(32px, 6vw, 56px);
+  .container {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-inline: var(--page-inline);
+    display: grid;
+    gap: clamp(32px, 6vw, 56px);
+  }
 }
 
 .team-heading {
   max-width: 720px;
   text-align: left;
-}
 
-.team-heading h2 {
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  font-weight: 700;
-  margin-bottom: clamp(12px, 1.5vw, 18px);
-}
+  h2 {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: clamp(12px, 1.5vw, 18px);
+  }
 
-.team-heading p {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(1.05rem, 0.8vw + 1rem, 1.3rem);
-  line-height: 1.75;
-  color: color-mix(in srgb, var(--on-surface) 85%, white);
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1.05rem, 0.8vw + 1rem, 1.3rem);
+    line-height: 1.75;
+    color: color-mix(in srgb, var(--on-surface) 85%, white);
+  }
 }
 
 .team-base-image {
@@ -128,17 +144,19 @@
   border-radius: 22px;
   background: url('../assets/about_TeamBaseImage.webp') center / cover no-repeat;
   overflow: hidden;
-}
 
-.team-base-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      145deg,
       color-mix(in srgb, var(--primary) 22%, transparent),
-      color-mix(in srgb, var(--surface) 88%, transparent));
-  backdrop-filter: blur(2px);
-  z-index: 0;
+      color-mix(in srgb, var(--surface) 88%, transparent)
+    );
+    backdrop-filter: blur(2px);
+    z-index: 0;
+  }
 }
 
 .team-grid {
@@ -164,46 +182,48 @@
   backdrop-filter: blur(6px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 100%;
-}
 
-.team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hov);
-}
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hov);
+  }
 
-.team-card h3 {
-  font-size: clamp(1.3rem, 0.9vw + 1.1rem, 1.8rem);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
+  h3 {
+    font-size: clamp(1.3rem, 0.9vw + 1.1rem, 1.8rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
 
-.team-card p {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.15rem);
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.82);
-}
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.15rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.82);
+  }
 
-.team-card .social-icons2 {
-  display: flex;
-  gap: clamp(12px, 1.2vw, 18px);
-}
+  .social-icons2 {
+    display: flex;
+    gap: clamp(12px, 1.2vw, 18px);
 
-.team-card .social-icons2 i {
-  font-size: clamp(1.1rem, 1vw + 0.9rem, 1.5rem);
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+    i {
+      font-size: clamp(1.1rem, 1vw + 0.9rem, 1.5rem);
+      color: #fff;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
 
-.team-card .social-icons2 a:hover i {
-  transform: translateY(-2px) scale(1.05);
-  color: var(--primary);
+    a:hover i {
+      transform: translateY(-2px) scale(1.05);
+      color: var(--primary);
+    }
+  }
 }
 
 /* Responsive Tweaks */
 @media (max-width: 900px) {
-  .team .container {
-    gap: clamp(28px, 8vw, 44px);
+  .team {
+    .container {
+      gap: clamp(28px, 8vw, 44px);
+    }
   }
 
   .team-heading {
