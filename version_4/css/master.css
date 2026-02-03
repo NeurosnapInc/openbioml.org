@@ -127,12 +127,14 @@ nav .container {
     margin: 0;
     padding-inline: clamp(18px, 6vw, 72px);
 }
+
 nav .logo {
     display: flex;
     align-items: center;
     width: clamp(140px, 12vw, 200px);
     height: auto;
 }
+
 nav .main-menu {
     flex-grow: 1;
 }
@@ -198,13 +200,15 @@ nav .social-icons3 {
 }
 
 nav .social-icons2 a img {
-    width: 25px; /* Adjusted size for alignment */
+    width: 25px;
+    /* Adjusted size for alignment */
     height: auto;
     transition: 0.3s ease-in-out;
 }
 
 nav .social-icons3 a img {
-    width: 25px; /* Adjusted size for alignment */
+    width: 25px;
+    /* Adjusted size for alignment */
     height: auto;
     transition: 0.3s ease-in-out;
 }
@@ -249,7 +253,8 @@ nav .logo a img:hover {
 .footer-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Separate nav and social icons */
+    justify-content: space-between;
+    /* Separate nav and social icons */
     align-items: flex-start;
     border-bottom: 1px solid #555;
 }
@@ -257,7 +262,8 @@ nav .logo a img:hover {
 .logo-and-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align logo to the left */
+    align-items: flex-start;
+    /* Align logo to the left */
     margin-bottom: 4vw;
     gap: 20px;
 }
@@ -265,16 +271,21 @@ nav .logo a img:hover {
 .nav-social {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Space between nav and social icons */
-    align-items: center; /* Align nav and icons vertically */
-    width: 100%; /* Ensure full width */
+    justify-content: space-between;
+    /* Space between nav and social icons */
+    align-items: center;
+    /* Align nav and icons vertically */
+    width: 100%;
+    /* Ensure full width */
     margin-bottom: 2.5vw;
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: row; /* Navigation links in a row */
-    gap: clamp(18px, 3vw, 32px); /* Space between nav links */
+    flex-direction: row;
+    /* Navigation links in a row */
+    gap: clamp(18px, 3vw, 32px);
+    /* Space between nav links */
     margin-left: 0;
 }
 
@@ -292,13 +303,15 @@ nav .logo a img:hover {
 .social-icons {
     display: flex;
     margin-right: 0;
-    gap: clamp(18px, 3vw, 32px); /* Space between social icons */
+    gap: clamp(18px, 3vw, 32px);
+    /* Space between social icons */
 }
 
 .social-icons a {
     color: color-mix(in srgb, var(--on-surface) 90%, white);
     text-decoration: none;
-    font-size: 25px; /* Adjust icon size */
+    font-size: 25px;
+    /* Adjust icon size */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -353,24 +366,10 @@ nav .logo a img:hover {
     width: auto;
 }
 
-.bg-footer2 {
-    margin-top: 8vw;
-    background: color-mix(in srgb, var(--surface) 78%, rgba(4, 18, 29, 0.65));
-    color: var(--on-surface); /* White text color for contrast */
-    height: 100%; /* Allow the background to grow with the content */
-    width: 100%; /* Ensure the background spans the full width */
-    background-position: center;
-    background-size: cover; /* Ensures image covers the full background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fff;
-    width: auto;
-
-
-}
-
 
 .btn {
-    position: relative; /* Needed for pseudo-element positioning */
+    position: relative;
+    /* Needed for pseudo-element positioning */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -394,7 +393,8 @@ nav .logo a img:hover {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 2px; /* Increase this for a thicker border */
+    padding: 2px;
+    /* Increase this for a thicker border */
     border-radius: 9999px;
     background: var(--gradient-primary);
     -webkit-mask:
@@ -410,7 +410,8 @@ nav .logo a img:hover {
 
 .btn:hover {
     background-image: var(--gradient-primary);
-    color: #050505; /* Change text color on hover */
+    color: #050505;
+    /* Change text color on hover */
     box-shadow: var(--shadow-hov);
     transform: translateY(-2px);
 }
@@ -432,7 +433,8 @@ nav .logo a img:hover {
     border: 2px solid color-mix(in srgb, var(--primary) 70%, white);
     background: color-mix(in srgb, var(--surface) 82%, transparent);
     cursor: pointer;
-    overflow: hidden; /* Ensure rounded corners are respected */
+    overflow: hidden;
+    /* Ensure rounded corners are respected */
     margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -442,8 +444,10 @@ nav .logo a img:hover {
 }
 
 .btn2:hover {
-    background: var(--primary); /* Change background color */
-    color: #050505; /* Change text color on hover */
+    background: var(--primary);
+    /* Change background color */
+    color: #050505;
+    /* Change text color on hover */
     box-shadow: var(--shadow-hov);
     transform: translateY(-2px);
 }
@@ -488,7 +492,8 @@ nav .logo a img:hover {
     color: #fff;
     transition: transform 0.3s ease;
     display: flex;
-    flex-direction: column; /* Stack image and text */
+    flex-direction: column;
+    /* Stack image and text */
     gap: 10px;
 
 }
@@ -556,19 +561,22 @@ nav .logo a img:hover {
         height: 35px;
 
     }
+
     .button-text {
         font-family: 'Lato', sans-serif;
         font-size: 14px;
         font-weight: 600;
-        line-height: normal; /* Avoid fixed line height to prevent alignment issues */
+        line-height: normal;
+        /* Avoid fixed line height to prevent alignment issues */
         letter-spacing: -0.02em;
-        text-align: center; /* Ensure text alignment */
+        text-align: center;
+        /* Ensure text alignment */
         text-decoration-skip-ink: none;
     }
 
 
     .nav-social {
-       margin-bottom: 4vw;
+        margin-bottom: 4vw;
     }
 
     .footer-logo {
@@ -586,26 +594,23 @@ nav .logo a img:hover {
     .legal-links a {
         font-size: 1.6vw;
     }
-
-
-
-
-
-
 }
 
 @media (max-width: 610px) {
     nav .nav-text {
         font-size: 12px;
     }
+
     nav .social-icons2 a img {
-        width: 3vw; /* Adjusted size for alignment */
+        width: 3vw;
+        /* Adjusted size for alignment */
         height: 3vw;
         transition: 0.3s ease-in-out;
     }
 
     nav .social-icons3 a img {
-        width: 3vw; /* Adjusted size for alignment */
+        width: 3vw;
+        /* Adjusted size for alignment */
         height: 3vw;
         transition: 0.3s ease-in-out;
     }
@@ -625,7 +630,8 @@ nav .logo a img:hover {
 
 
     .btn::before {
-        padding: 1px; /* Increase this for a thicker border */
+        padding: 1px;
+        /* Increase this for a thicker border */
     }
 
 
@@ -635,9 +641,11 @@ nav .logo a img:hover {
         font-family: 'Lato', sans-serif;
         font-size: 10px;
         font-weight: 600;
-        line-height: normal; /* Avoid fixed line height to prevent alignment issues */
+        line-height: normal;
+        /* Avoid fixed line height to prevent alignment issues */
         letter-spacing: -0.02em;
-        text-align: center; /* Ensure text alignment */
+        text-align: center;
+        /* Ensure text alignment */
         text-decoration-skip-ink: none;
     }
 
