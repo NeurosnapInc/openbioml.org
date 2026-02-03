@@ -76,30 +76,48 @@
     </section>
   </section>
 
-  <!-- Diffusion Section -->
   <section class="diffusion">
     <div class="container">
       <img src="assets/projects_Diffusion.png" alt="Description of image">
       <div>
         <h2>DNA Diffusion</h2>
         <p>
-          Understanding the code of life: generative models of <br> regulatory DNA sequences based on diffusion models.
+          This project investigates the application and adaptation of recent diffusion models to genomics
+          data. Diffusion models are powerful models with outstanding results for image generation
+          (e.g., Stable Diffusion, DALL-E) and music generation (recent version of the magenta project).
+          A particular model formulation called "guided" diffusion allows biasing the generative process
+          toward a specific direction if, during training, a text or continuous/discrete labels are
+          provided. This enables the creation of "AI artists" that, based on a text prompt, can create
+          beautiful and complex images.
         </p>
         <div class="diffusion-buttons">
-          <a href="diffusion.html" class="btn button-text">Read More</a>
           <a href="https://github.com/pinellolab/DNA-Diffusion" class="btn button-text">See Project</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Dataset Section -->
   <section class="dataset">
     <div class="container">
       <div>
         <h2>Large Language Chemistry Dataset and Model</h2>
-        <p>
+        <h3>
           From words to molecules: Unlocking the secrets of chemistry with large language models
+        </h3>
+        <p>
+          This project aims to create an extensive chemistry dataset and use it to train large language models (LLMs) that can leverage the data for a wide range of chemistry applications.
+          <br><br>
+
+          The dataset itself will be very valuable for downstream NLP research focused on chemistry. The use cases for the model include generative applications from text to chemical data (e.g., molecular structure, properties, reactions, etc.) and the other way around, generation of code for computational chemistry applications, prediction of properties of materials and molecules (i.e., classification and regression tasks), as well as chemical reactions. However, the applications should not be limited to those, as we want to specifically look for (new) emergent behaviors not present in smaller LMs or LMs trained on less chemistry data.
+          <br><br>
+
+          Furthermore, the resulting models should be investigated with different prompting and sampling strategies to examine their capabilities. Such a capable chemistry LLM has a range of potential use cases, from a tool for experts that want to create new ideas to non-experts who could use the tool to explore new chemistry topics. Furthermore, such a tool can be helpful in education as an intelligent learning assistant.
+          <br><br>
+
+          Join the discussion on this project in our #chemnlp channel on our
+          <a href="https://discord.com/invite/GgDBFP8ZEt/" target="_blank" style="text-decoration: underline;">
+            Discord server
+          </a>.
         </p>
         <div class="dataset-buttons">
           <a href="dataset.html" class="btn button-text">Read More</a>
